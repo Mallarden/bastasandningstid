@@ -11,7 +11,7 @@
 			<div class="container">
 
 				<h2 class="pb-4"><strong>Eller kontakta oss!</strong></h2>
-				<? echo do_shortcode( '[wpforms id="269" title="false" description="false"]' ); ?>
+				<? echo do_shortcode( '[wpforms id="250" title="false" description="false"]' ); ?>
 		</div>
 			</section>
 			<footer class="footer" role="contentinfo">
