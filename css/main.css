@@ -552,6 +552,25 @@ footer .footer-container .side-col {
   margin-top: -75px;
 }
 
+.seventh-section {
+  background: #222;
+  color: white;
+  font-weight: bold;
+  padding-top: 150px;
+  margin-top: -75px;
+}
+.seventh-section h2 {
+  text-align: center;
+}
+
+div.wpforms-container-full .wpforms-form input.wpforms-field-medium {
+  max-width: 100% !important;
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-of-type {
+  max-width: 100% !important;
+}
+
 .copyright {
   text-align: center;
   color: white;
@@ -803,17 +822,14 @@ footer div p {
   }
   .services-second-section .case-container {
     display: block !important;
-    height: 70vh;
+    height: auto;
   }
   .services-second-section .case-container .col-sm-12 {
-    height: 50%;
+    height: 100%;
   }
-  .services-second-section .case-container .col-sm-12:nth-child(1) {
-    height: 60%;
-  }
-  .services-second-section .case-container .col-sm-12:nth-child(2) {
-    height: 40%;
-  }
+}
+.services-third-section {
+  padding-bottom: 100px;
 }
 .services-third-section .case-container:nth-child(2n+2) {
   flex-direction: row-reverse;

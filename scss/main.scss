@@ -555,6 +555,27 @@ footer {
 
 }
 
+.seventh-section {
+  background: #222;
+  // clip-path: url(#wave);
+  color:white;
+  // text-align:center;
+  font-weight:bold;
+  padding-top: 150px;
+    margin-top: -75px;
+  h2 {
+    text-align:center;
+  }
+}
+
+div.wpforms-container-full .wpforms-form input.wpforms-field-medium {
+  max-width:100% !important;
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-of-type {
+  max-width:100% !important;
+}
+
 .copyright {
   text-align: center;
   color: white;
@@ -860,14 +881,14 @@ font-size:1.5em;
     width: 100%;
     .case-container {
       display: block !important;
-      height: 70vh;
+      height: auto;
       .col-sm-12 {
-        height: 50%;
+        height: 100%;
         &:nth-child(1) {
-          height: 60%;
+          // height: 60%;
         }
         &:nth-child(2) {
-          height: 40%;
+          // height: 40%;
         }
       }
     }
@@ -875,6 +896,7 @@ font-size:1.5em;
 }
 
 .services-third-section {
+  padding-bottom:100px;
   .case-container {
     &:nth-child(2n+2) {
       flex-direction: row-reverse;

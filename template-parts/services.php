@@ -96,7 +96,7 @@ Vi arbetar med annonsering mot alla digitala plattformar där vi analyserar arbe
     <?php endwhile;	else :endif; ?>
     </div>
   </section>
-  <section class="services-third-section pb-5">
+  <section class="services-third-section">
     <div class="container pt-5">
       <h1 class="text-center font-weight-bold">Vår studio</h1>
       <p class="text-center">I samma lokal där vi klipper och klistrar har vi även vår inspelningsstudio som vi använder för projekt. Med mycket belysning och diverse olika bakgrunder kan vi skapa precis den miljö som önskas.</p>
@@ -104,7 +104,7 @@ Vi arbetar med annonsering mot alla digitala plattformar där vi analyserar arbe
     <div class="container">
     <?php if( have_rows('services_studio_repeater') ):
         while ( have_rows('services_studio_repeater') ) : the_row(); ?>
-    <div class="w-100 d-flex case-container">
+    <div class="w-100 d-flex case-container pt-4">
       <div class="col-lg-6 col-sm-12 fade-y" data-delighter="start:0.90;">
         <div class="clients-container w-100">
           <img src="<?php the_sub_field('studio_image'); ?>">
