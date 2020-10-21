@@ -15,11 +15,11 @@ h2 {
 }
 
 #primary {
-  margin-top: 75px;
+  // margin-top: 75px;
 }
 
 .tjanster #primary {
-  background-color: #f8f8f8;
+  background-color: #EDEDED;
 }
 
 body {
@@ -144,7 +144,7 @@ body {
 }
 
 .section-start {
-  background-color: $offWhite;
+  background-color: white;
 
   & > section {
     padding-top: 150px;
@@ -352,28 +352,75 @@ section {
 }
 
 .second-section {
+  .second-section-box {
+    width: 80%;
+    background-color:#222 !important;
+    height:200px;
+    position:absolute;
+    h1 {
+      color:white;
+      padding-top:30px;
+      width: 100vw;
+      position: absolute;
+      strong {
+        position:absolute;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
   .section-wrapper {
     width: 65%;
+    margin-top:75px !important;
     .our-expertise {
       width: 100%;
       .clients-container {
         video {
           object-fit: cover;
         }
+        text-align:center;
+
+      }
+      h3 {
+        padding-top:20px;
+
       }
       .middle-animation {
-        margin-top: -50px;
+        // margin-top: -50px;
       }
     }
   }
 }
 
 .third-section {
+  padding-bottom:75px;
+  h1 {
+    color:white;
+    padding-top:30px;
+    width: 100vw;
+    position: absolute;
+    z-index: 1000;
+    strong {
+      position:absolute;
+      left: 0;
+      right: 0;
+    }
+  } 
+  .third-section-box {
+    width: 80%;
+    background-color:#222 !important;
+    height:200px;
+    position:absolute;
+    right:0;
+
+  }
   h1 {
     text-align: center;
     padding-bottom: 50px;
   }
-
+  .container {
+    margin-top:200px;
+  }
   .projects-container {
     display: flex;
   }
@@ -497,6 +544,17 @@ footer {
   }
 }
 
+.sixth-section {
+  background: #222;
+  clip-path: url(#wave);
+  color:white;
+  text-align:center;
+  font-weight:bold;
+  padding-top: 150px;
+    margin-top: -75px;
+
+}
+
 .copyright {
   text-align: center;
   color: white;
@@ -527,21 +585,57 @@ footer {
 .card-3 {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
+.wave-test {
+  background: #EDEDED;
+  clip-path: url(#wave);
+  // height: 500px;
+  // background-color: white;
+  margin-top: -20vh;
 
+}
 .services-first-section {
-  margin-top: 50vh;
+  width: 100vw;
+  padding-bottom: 100px;
+  .container {
+    & > * {
+      padding-top:100px;
+    }
+    .black-box {
+      padding:20px;
+      background-color:black;
+      color:white;
+      text-align:center;
+      width:50%;
+      font-size: calc(24px + (26 - 10) * ((100vw - 900px) / (1100 - 300)));
+      font-weight:bold;
+    }
+    .services-first-container {
+      .service-first-title h1 {
+        font-weight: bold;
+      }
+    }
+  }
 }
 .services-second-section {
-  width: 75%;
+  background: #222;
   margin: 0 auto;
-  margin-top: 75px;
   h1 {
     padding: 50px 0px;
     display: block;
+    color:White;
+  }
+  .container-fluid {
+    padding-top:100px;
+    max-width:70%;
+    margin:0 auto;
+    h1 {
+      color:white;
+    }
   }
   .case-container {
-    height: 30vh;
-    min-height: 200px;
+    // height: 30vh;
+    // min-height: 200px;
+    padding:50px 0px;
     &:nth-child(odd) {
       flex-flow: row-reverse;
     }
@@ -550,36 +644,69 @@ footer {
       display: flex;
       align-items: center;
       margin: 0 auto;
+      color:white;
     }
   }
   .clients-container {
     height: 100%;
     background-size: cover;
+    img {
+      min-width: 100px;
+      min-height: 100px;
+    }
   }
 }
 
 .tjanster-hero-image {
-  // background-image: url('../img/scenic-water.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-  top: 0;
-  position: fixed;
-  height: 50vh;
-  width: 100%;
-  display: flex;
-  video {
-    object-fit: cover;
-    width: 100vw;
-    height: 50vh;
-    position: fixed;
-    top: 0;
-    left: 0;
+  .flex-container {
+    h1 {
+      font-size: calc(34px + (36 - 10) * ((100vw - 900px) / (1100 - 300)));
+
+    }
+    height: 90vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.row {
+    width: auto;
+}
+.flex-item {
+    padding: 5px;
+    margin: 10px;
+    // line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+  background-color:#EBE2CD;
+  .container div {
+    // height:100vh;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    > *{
+    padding:20px 0px;
   }
-  .text-animation {
-    display: none;
+  
   }
+}
+
+.about-first-section {
+  background-color:#fff;
+}
+
+.about-second-section {
+  .container {
+    > *{
+      padding:20px 0px;
+    }
+  .row:nth-child(2n+2) {
+    flex-direction: row-reverse;
+  }
+}
 }
 
 /*------------------------------------*\
@@ -648,6 +775,9 @@ footer {
         width: 50%;
       }
     }
+  }
+  body.mob-menu-overlay, body.mob-menu-slideout, body.mob-menu-slideout-over, body.mob-menu-slideout-top {
+    padding-top:0px !important;
   }
 }
 
@@ -724,12 +854,10 @@ footer {
     }
   }
   .services-first-section {
-    h1 {
-      font-size: 1.5em;
-    }
+font-size:1.5em;
   }
   .services-second-section {
-    width: 90%;
+    width: 100%;
     .case-container {
       display: block !important;
       height: 70vh;
@@ -741,6 +869,17 @@ footer {
         &:nth-child(2) {
           height: 40%;
         }
+      }
+    }
+  }
+}
+
+.services-third-section {
+  .case-container {
+    &:nth-child(2n+2) {
+      flex-direction: row-reverse;
+      .clients-container {
+        text-align:right;
       }
     }
   }
