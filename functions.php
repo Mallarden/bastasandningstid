@@ -94,11 +94,10 @@ function html5blank_header_scripts() {
         wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('html5blankscripts'); // Enqueue it!
 
-
-
         wp_register_script('htmldelighter', get_template_directory_uri() . '/js/delighters.min.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('htmldelighter'); // Enqueue it!
-        wp_register_script('animate', get_template_directory_uri() . '/js/owl.carousel.js', array('jquery'), '1.0.0'); // Custom scripts
+
+        wp_register_script('animate', get_template_directory_uri() . '/js/owl.carousel.min.js', array('jquery'), '5.0.0'); // Custom scripts
         wp_enqueue_script('animate'); // Enqueue it!
     }
 }
@@ -160,7 +159,12 @@ function html5blank_styles() {
 
     wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '1.0', 'all');
     wp_enqueue_style('bootstrap'); // Enqueue it!
+
+    wp_register_style('owl', get_template_directory_uri() . '/css/owl.theme.default.min.css', array(), '1.0', 'all');
+    wp_enqueue_style('owl'); // Enqueue it!
 }
+
+
 
 // Register HTML5 Blank Navigation
 function register_html5_menu() {

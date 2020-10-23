@@ -90,13 +90,8 @@ get_header(); ?>
     <?php if( have_rows('sektion_2') ):
 							while ( have_rows('sektion_2') ) : the_row(); ?>
         <div class="col-lg-6 col-sm-6 p-0 fade-y" data-delighter="start:0.95;">
-          <div class="clients-container" style="background-image:url('<?php the_sub_field('section-2-image-left'); ?>')">
-          <p>test</p>
-          </div>
-        </div>
-        <div class="col-lg-6 col-sm-6 p-0 fade-y" data-delighter="start:0.90;">
-        <div class="clients-container" style="background-image:url('<?php the_sub_field('section-2-image-center'); ?>')">
-          <p>test</p>
+          <div class="clients-container" style="background-image:url('<?php the_sub_field('section-2-image'); ?>')">
+          <img src="<?php the_sub_field('section_2_logga'); ?>">
           </div>
         </div>
         <?php endwhile;	else :endif; ?>
@@ -125,30 +120,34 @@ get_header(); ?>
 
   </section>
   <div class="wave-bottom"></div>
-  <section class="fifth-section">
-    <div class="section-wrapper">
-      <?php if( have_rows('sektion_4') ):
+  <section class="fifth-section pt-5">
+    <div class="section-wrapper pb-0">
+              <h2 class="fade-y" data-delighter="start:0.96;"><strong>Några fina ord.</strong></h2>
+    <!-- TESTIMONIALS -->
+<section class="testimonials">
+	<div class="container">
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="customers-testimonials" class="owl-carousel owl-theme">
+  <!-- <?php if( have_rows('sektion_4') ):
               while ( have_rows('sektion_4') ) : the_row(); ?>
-               <div class="row">
-      <div class="citat-wrapper" style="width:100%;" data-delighter="start:0.90;">
-        <div class="col-sm-12 col-lg-4 pr-0 fade-y">
-          <div class="our-team-img-info">
-            <div class="col-xs-12 col-sm-12 fade-y personbild pt-5"
-              style="background-image:url('<?php the_sub_field('personbild'); ?>')"></div>
-            <div class="col-xs-12 col-sm-12 fade-y pt-4" style="max-width: max-content;
-    margin: 0 auto; text-align:center;">
-              <p><?php the_sub_field('personinfo');?>
+            <!--TESTIMONIAL 1 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="<?php the_sub_field('personbild'); ?>" alt="">
+                <p><?php the_sub_field('personinfo');?></p>
+              </div>
+              <div class="testimonial-name pt-4"><?php the_sub_field('personbeskrivning')?></div>
             </div>
-            </p>
+            <!--END OF TESTIMONIAL 1 -->
+            <?php endwhile;	else :endif; ?> 
           </div>
         </div>
-        <div class="col-md-12 col-lg-8 col-sm-12 fade-y citat-text">
-          <div class="pt-2"><?php the_sub_field('personbeskrivning')?></div>
-        </div>
       </div>
-    </div>
-    <hr/>
-    <?php endwhile;	else :endif; ?>
+      </div>
+    </section>
+    <!-- END OF TESTIMONIALS -->
     </div>
     <svg>
         <clipPath id="wave" clipPathUnits="objectBoundingBox">

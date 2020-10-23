@@ -10,11 +10,6 @@ get_header(); ?>
       <source src="<?php echo get_stylesheet_directory_uri(); ?>/img/gbg-03.mp4" type="video/mp4" />
   </video> -->
       <div>
-        <!-- <h1>En rörlig helhetslösning.</h1>
-        <p>Tillsammans tittar vi på vad för rörligt content ni ska utnyttja och hur detta ska utformas på bästa sätt.
-          Sedan producerar vi det. Helt för egen maskin. Tillsist stöttar vi publicerings- och annonseringsarbetet så
-          mycket det behövs. </p>
-        <h4>En enkel formula där alla delar integreras för att kunna erhålla så bra resultat som möjligt.</h4> -->
         <div class="flex-container">
           <div class="row d-block">
             <h1 class="flex-item">En rörlig helhetslösning.</h1>
@@ -30,7 +25,7 @@ get_header(); ?>
       </div>
     </div>
   </div>
-  <section class="wave-test about-first-section pb-5">
+  <section class="wave-test about-first-section pb-5 ">
   <svg>
     <clipPath id="wave" clipPathUnits="objectBoundingBox">
       <path class="st0" d="M1,0c0,0-0.3,0.1-0.5,0.1S0.3,0,0,0.1V1h1L1,0z"/>
@@ -39,7 +34,7 @@ get_header(); ?>
     <div class="container">
     <h1 class=""><strong>Vilka är vi?</h1></strong>
     <p>Vi är ett gäng energifyllda arbetsmyror som är lika förtjusta i Adobe-programmen och kamerateknik, som gröna siffror och tilltagande grafer i diverse marknadsautomation- och annonseringsverktyg. Hur kommer sig denna kombination? Jo för vi har utbildat oss till ingenjörer eller ekonomer, parallellt med att en hobby blev till en sysselsättning som blev till en heltidstjänst. 
-    <br/><br/>
+    <br/>
 Vi har fått det bästa av två världar som vi sedan integrerat: Resultatorienterad business rörlig bild.</p>
     </div>
   </section>
@@ -48,11 +43,11 @@ Vi har fått det bästa av två världar som vi sedan integrerat: Resultatorient
   <?php if( have_rows('about_us') ):
     while ( have_rows('about_us') ) : the_row(); ?>
       <div class="row pt-5">
-        <div class="col-6">
+        <div class="col-lg-6 col-sm-12">
             <img src="<?php the_sub_field('about_us_image'); ?>"/>
         </div>
-        <div class="col-6">
-            <div class="abouts-first-container">
+        <div class="col-lg-6 col-sm-12">
+            <div class="abouts-first-container pt-3">
                 <?php the_sub_field('about_us_text'); ?>
             </div>
         </div>

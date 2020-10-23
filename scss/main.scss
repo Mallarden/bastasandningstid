@@ -2,6 +2,7 @@
 @import "_colors";
 @import "_reset";
 @import "_fonts";
+@import "_owl.carousel";
 
 h1,
 h2,
@@ -309,7 +310,7 @@ body {
 }
 
 section {
-  background-color: $offWhite;
+  // background-color: $offWhite;
 
   .col {
   }
@@ -429,8 +430,9 @@ section {
     height: 300px;
     background-size: cover;
 
-    p {
-      display: flex !important;
+    img {
+      display:block;
+      margin:0 auto;
       justify-content: center;
       align-items: center;
       height: 100%;
@@ -441,7 +443,7 @@ section {
 
     &:hover {
       cursor: pointer;
-      p {
+      img {
         display: flex !important;
         justify-content: center;
         align-items: center;
@@ -468,6 +470,10 @@ section {
 }
 
 .fifth-section {
+  section {
+    background-color: white !important;
+
+  }
   background-color: white !important;
   .personbild {
     // min-width: 150px;
@@ -568,6 +574,78 @@ footer {
   }
 }
 
+.shadow-effect {
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+border:1px solid #ECECEC;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.02);
+}
+#customers-testimonials .shadow-effect p {
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 0 0 17px 0;
+  font-weight: 300;
+}
+.testimonial-name {
+  margin: -17px auto 0;
+  display: table;
+  width: auto;
+  background: $beige;
+  padding: 9px 35px;
+  border-radius: 0px 0px 20px 20px;
+  text-align: center;
+  color: #222;
+  box-shadow: 0 9px 18px rgba(0,0,0,0.12), 0 5px 7px rgba(0,0,0,0.05);
+}
+#customers-testimonials .item {
+  text-align: center;
+  padding: 50px;
+  margin-bottom:80px;
+  opacity: .2;
+  -webkit-transform: scale3d(0.8, 0.8, 1);
+  transform: scale3d(0.8, 0.8, 1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#customers-testimonials .owl-item.active.center .item {
+  opacity: 1;
+  -webkit-transform: scale3d(1.0, 1.0, 1);
+  transform: scale3d(1.0, 1.0, 1);
+}
+.owl-carousel .owl-item img {
+  transform-style: preserve-3d;
+  max-width: 90px;
+  margin: 0 auto 17px;
+}
+#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
+#customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
+  background: $darkBeige;
+  transform: translate3d(0px, -50%, 0px) scale(0.7);
+}
+#customers-testimonials.owl-carousel .owl-dots{
+display: inline-block;
+width: 100%;
+text-align: center;
+}
+#customers-testimonials.owl-carousel .owl-dots .owl-dot{
+display: inline-block;
+outline:0;
+}
+#customers-testimonials.owl-carousel .owl-dots .owl-dot span {
+  background: #222;
+  display: inline-block;
+  height: 20px;
+  margin: 0 2px 5px;
+  transform: translate3d(0px, -50%, 0px) scale(0.3);
+  transform-origin: 50% 50% 0;
+  transition: all 250ms ease-out 0s;
+  width: 20px;
+}
+
 div.wpforms-container-full .wpforms-form input.wpforms-field-medium {
   max-width:100% !important;
 }
@@ -629,6 +707,7 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
       width:50%;
       font-size: calc(24px + (26 - 10) * ((100vw - 900px) / (1100 - 300)));
       font-weight:bold;
+      min-width: 70px;
     }
     .services-first-container {
       .service-first-title h1 {
@@ -672,8 +751,9 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
     height: 100%;
     background-size: cover;
     img {
-      min-width: 100px;
-      min-height: 100px;
+      height: 75px;
+      margin: 0 auto;
+      display: block;
     }
   }
 }
@@ -714,9 +794,12 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
   
   }
 }
-
+.about-hero-image {
+  height: 33vh;
+  overflow: hidden;
+}
 .about-first-section {
-  background-color:#fff;
+  background-color:#f8f8f8;
 }
 
 .about-second-section {
@@ -727,7 +810,36 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
   .row:nth-child(2n+2) {
     flex-direction: row-reverse;
   }
+  }
 }
+
+.blogg-hero-image {
+  height: 33vh;
+  overflow: hidden;
+  width:100%;
+  video {
+    width:100%;
+  }
+}
+
+.blog-item {
+  &:nth-child(1) {
+    padding:25px 0px;
+  }
+  &:nth-child(1n+2) {
+    padding:100px 0px;
+  }
+  border-bottom:1px solid #EBE2CD;
+  h1 {
+    font-weight:bold;
+  }
+  h5 {
+    color:lightgrey;
+    font-size:14px;
+  }
+  p {
+    letter-spacing: 1px;
+  }
 }
 
 /*------------------------------------*\
@@ -803,6 +915,36 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
 }
 
 @media only screen and (max-width: 991px) {
+  .about-second-section {
+    .container {
+      img {
+        width:75%;
+        display: block;
+        margin:0 auto;
+      }
+    }
+  }
+  .services-second-section .container-fluid {
+    max-width:90%;
+  }
+  .services-first-container {
+    .service-first-title h1 {
+      font-weight: bold;
+      font-size:2rem;
+    }
+  }
+  .services-second-section {
+    .container-fluid {
+    padding-top:25px;
+    padding:20px 0px;
+    }
+    h1 {
+      padding:20px 0px;
+    }
+    .case-container {
+    padding:20px 0px;
+    }
+  }
   section .section-wrapper {
   }
 
@@ -875,7 +1017,8 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
     }
   }
   .services-first-section {
-font-size:1.5em;
+    background: transparent;
+    font-size:1.5em;
   }
   .services-second-section {
     width: 100%;
@@ -884,6 +1027,7 @@ font-size:1.5em;
       height: auto;
       .col-sm-12 {
         height: 100%;
+        text-align:center;
         &:nth-child(1) {
           // height: 60%;
         }
@@ -898,10 +1042,20 @@ font-size:1.5em;
 .services-third-section {
   padding-bottom:100px;
   .case-container {
+    .clients-container {
+      -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+      img {
+        border:10px solid white;
+    
+      }
+    }
     &:nth-child(2n+2) {
       flex-direction: row-reverse;
       .clients-container {
         text-align:right;
+     
       }
     }
   }
