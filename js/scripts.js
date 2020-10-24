@@ -80,7 +80,7 @@
     $("#customers-testimonials").owlCarousel({
       loop: true,
       center: true,
-      items: 5,
+      items: 3,
       margin: 0,
       autoplay: true,
       dots: true,
