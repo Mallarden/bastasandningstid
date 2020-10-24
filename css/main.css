@@ -1210,6 +1210,10 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
   }
 }
 @media only screen and (max-width: 991px) {
+  .blog-container .blog-item .blog-img-container {
+    height: 300px;
+  }
+
   .section-start > section {
     padding-top: 50px;
   }
