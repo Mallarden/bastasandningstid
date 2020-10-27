@@ -2,8 +2,7 @@
 
 	<main role="main">
 	<!-- section -->
-	<section>
-
+	<section class="single-blog-page">
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 		<!-- article -->
@@ -11,15 +10,14 @@
 
 			<!-- post thumbnail -->
 			<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 					<?php the_post_thumbnail(); // Fullsize image for the single post ?>
-				</a>
 			<?php endif; ?>
 			<!-- /post thumbnail -->
+			<div class="container">
 
 			<!-- post title -->
-			<h1>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+			<h1 class="mb-0 pt-3">
+				<?php the_title(); ?>
 			</h1>
 			<!-- /post title -->
 
@@ -39,7 +37,7 @@
 
 			<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
 
-			<?php comments_template(); ?>
+			</div>
 
 		</article>
 		<!-- /article -->
@@ -57,11 +55,8 @@
 		<!-- /article -->
 
 	<?php endif; ?>
-
 	</section>
 	<!-- /section -->
 	</main>
-
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

@@ -43,11 +43,11 @@ Vi har fått det bästa av två världar som vi sedan integrerat: Resultatorient
   <?php if( have_rows('about_us') ):
     while ( have_rows('about_us') ) : the_row(); ?>
       <div class="row pt-5">
-        <div class="col-lg-6 col-sm-12">
-            <img src="<?php the_sub_field('about_us_image'); ?>"/>
+        <div class="col-lg-5 col-sm-12 about-us-img" style="background-image:url('<?php the_sub_field('about_us_image'); ?>')">
+            <!-- <img src="<?php the_sub_field('about_us_image'); ?>"/> -->
         </div>
-        <div class="col-lg-6 col-sm-12">
-            <div class="abouts-first-container pt-3">
+        <div class="col-lg-7 col-sm-12 d-flex align-items-center">
+            <div class="about-first-container pt-3">
                 <?php the_sub_field('about_us_text'); ?>
             </div>
         </div>
