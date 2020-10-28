@@ -89,7 +89,7 @@ get_header(); ?>
       <div class="row projects-container">
     <?php if( have_rows('sektion_2') ):
               while ( have_rows('sektion_2') ) : the_row(); ?>
-              <a href="<?php the_sub_field('section_2_href'); ?>" class="col-lg-6 col-sm-6 p-0 fade-y" data-delighter="start:0.95;">
+              <a href="<?php the_sub_field('section_2_ahref'); ?>" class="col-lg-6 col-sm-6 p-0 fade-y" data-delighter="start:0.95;">
       
           <div class="clients-container" style="background-image:url('<?php the_sub_field('section-2-image'); ?>')">
           <img src="<?php the_sub_field('section_2_logga'); ?>">
