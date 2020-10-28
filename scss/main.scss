@@ -761,9 +761,9 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
     // height: 30vh;
     // min-height: 200px;
     padding:50px 0px;
-    &:nth-child(odd) {
-      flex-flow: row-reverse;
-    }
+    // &:nth-child(odd) {
+    //   flex-flow: row-reverse;
+    // }
     .clients-text-container {
       height: 100%;
       display: flex;

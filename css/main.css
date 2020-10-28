@@ -1008,9 +1008,6 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
 .services-second-section .case-container {
   padding: 50px 0px;
 }
-.services-second-section .case-container:nth-child(odd) {
-  flex-flow: row-reverse;
-}
 .services-second-section .case-container .clients-text-container {
   height: 100%;
   display: flex;
