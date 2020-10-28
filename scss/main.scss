@@ -15,6 +15,14 @@ h2 {
   font-weight: bolder;
 }
 
+p {
+}
+
+* {
+  // font-family: $primary !important;
+
+}
+
 #primary {
   // margin-top: 75px;
 }
@@ -767,6 +775,8 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
   .clients-container {
     height: 100%;
     background-size: cover;
+    display: flex;
+    align-items: center;
     img {
       height: 75px;
       margin: 0 auto;

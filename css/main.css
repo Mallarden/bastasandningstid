@@ -1021,6 +1021,8 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
 .services-second-section .clients-container {
   height: 100%;
   background-size: cover;
+  display: flex;
+  align-items: center;
 }
 .services-second-section .clients-container img {
   height: 75px;
