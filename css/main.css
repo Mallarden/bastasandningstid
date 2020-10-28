@@ -353,6 +353,10 @@ h2 {
   font-weight: bolder;
 }
 
+a:focus {
+  text-decoration: none;
+}
+
 .tjanster #primary {
   background-color: #EDEDED;
 }
@@ -1022,9 +1026,10 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
   align-items: center;
 }
 .services-second-section .clients-container img {
-  height: 75px;
   margin: 0 auto;
   display: block;
+  min-width: 75px;
+  max-height: 125px;
 }
 
 .tjanster-hero-image {
@@ -1055,8 +1060,30 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
 }
 
 .about-hero-image {
-  height: 33vh;
-  overflow: hidden;
+  background-image: url(../img/Exempel-studiosetup.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.about-hero-image .about-filter {
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.about-hero-image .flex-container {
+  color: white;
+  height: 90vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-hero-image .flex-container h1 {
+  font-size: calc(34px + (36 - 10) * ((100vw - 900px) / (1100 - 300)));
+  font-weight: bold;
+}
+.about-hero-image .flex-container h4 {
+  font-weight: bold;
 }
 
 .about-first-section {
@@ -1187,9 +1214,8 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
 }
 
 .project-content {
-  padding-top: -100px;
-  padding-bottom: 150px;
   position: relative;
+  margin-top: -100px;
 }
 .project-content .wp-block-embed iframe {
   margin: 0 auto;
@@ -1199,6 +1225,10 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+main section h1 {
+  display: none;
 }
 
 /*------------------------------------*\
@@ -1255,7 +1285,43 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
     padding-top: 0px !important;
   }
 }
+.projekt-hero-image {
+  background-image: url(../img/gtg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.projekt-hero-image .flex-container {
+  font-weight: bold;
+  height: 90vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.projekt-hero-image .flex-container h1 {
+  font-size: calc(34px + (36 - 10) * ((100vw - 900px) / (1100 - 300)));
+  color: white;
+  font-weight: bold;
+}
+.projekt-hero-image .flex-container h4 {
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 991px) {
+  .clients-container {
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  }
+  .clients-container img {
+    margin: 0 auto;
+    display: block;
+    max-width: 75px;
+  }
+
   .blog-container .blog-item .blog-img-container {
     height: 300px;
   }

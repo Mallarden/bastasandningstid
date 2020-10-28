@@ -4,7 +4,8 @@
 */
 get_header(); ?>
 <div id="primary" class="content">
-<div class="tjanster-hero-image">
+<div class="about-hero-image">
+  <div class="about-filter">
     <div class="container text-center">
       <!-- <video autoplay playsinline autoplay muted loop>
       <source src="<?php echo get_stylesheet_directory_uri(); ?>/img/gbg-03.mp4" type="video/mp4" />
@@ -12,18 +13,14 @@ get_header(); ?>
       <div>
         <div class="flex-container">
           <div class="row d-block">
-            <h1 class="flex-item">En rörlig helhetslösning.</h1>
-            <p class="flex-item">Tillsammans tittar vi på vad för rörligt content ni ska utnyttja och hur detta ska
-              utformas på bästa sätt.
-              Sedan producerar vi det. Helt för egen maskin. Tillsist stöttar vi publicerings- och annonseringsarbetet
-              så
-              mycket det behövs. </p>
-            <h4 class="flex-item">En enkel formula där alla delar integreras för att kunna erhålla så bra resultat som
-              möjligt.</h4>
+            <h1 class="flex-item">Drivna. Nyfikna. Glada.</h1>
+            <!-- <p class="flex-item">Vi har alltid haft som ambition att skapa den bästa arbetstiden. </p> -->
+            <h4 class="flex-item">Vi har alltid haft som ambition att skapa den bästa arbetstiden.</h4>
           </div>
         </div>
       </div>
     </div>
+</div>
   </div>
   <section class="wave-test about-first-section pb-5 ">
   <svg>

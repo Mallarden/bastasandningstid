@@ -10,12 +10,12 @@
 
 			<!-- article -->
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<div class="blogg-hero-image skew-bg position-relative">
+			<div class="projekt-hero-image position-relative">
     <div class="container text-center content">
       <!-- <video autoplay playsinline autoplay muted loop>
       <source src="<?php echo get_stylesheet_directory_uri(); ?>/img/gbg-03.mp4" type="video/mp4" />
   </video> -->
-      <div>
+     
         <!-- <h1>En rörlig helhetslösning.</h1>
         <p>Tillsammans tittar vi på vad för rörligt content ni ska utnyttja och hur detta ska utformas på bästa sätt.
           Sedan producerar vi det. Helt för egen maskin. Tillsist stöttar vi publicerings- och annonseringsarbetet så
