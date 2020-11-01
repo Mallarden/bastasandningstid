@@ -17,7 +17,9 @@ get_header(); ?>
       </div>
     </div>
   <div class="container py-5">
-    <?php echo do_shortcode("[pt_view id=cafbcbbf0w]"); ?>
+    <div class="case-grid">
+      <?php echo do_shortcode("[pt_view id=cafbcbbf0w]"); ?>
+    </div>
   </div>
 </div><!-- #primary -->
 
