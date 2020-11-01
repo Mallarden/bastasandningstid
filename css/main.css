@@ -668,6 +668,7 @@ section .section-wrapper ul {
   width: 100%;
 }
 .second-section .section-wrapper .our-expertise .clients-container {
+  display: block;
   text-align: center;
 }
 .second-section .section-wrapper .our-expertise .clients-container video {
@@ -798,17 +799,14 @@ section .section-wrapper ul {
 .third-section .container {
   margin-top: 200px;
 }
-.third-section .projects-container {
-  display: flex;
-}
 .third-section a {
   width: 100%;
 }
-.third-section a .clients-container {
+.third-section a .projects-container {
   height: 300px;
   background-size: cover;
 }
-.third-section a .clients-container img {
+.third-section a .projects-container img {
   display: block;
   margin: 0 auto;
   justify-content: center;
@@ -818,18 +816,18 @@ section .section-wrapper ul {
   opacity: 1;
   font-size: 3em;
 }
-.third-section a .clients-container p {
+.third-section a .projects-container p {
   opacity: 0;
 }
-.third-section a .clients-container:hover {
+.third-section a .projects-container:hover {
   cursor: pointer;
   transition: 0.3s ease-in;
 }
-.third-section a .clients-container:hover img {
+.third-section a .projects-container:hover img {
   display: none;
   transition: 0.3s ease-in;
 }
-.third-section a .clients-container:hover p {
+.third-section a .projects-container:hover p {
   display: flex !important;
   justify-content: center;
   align-items: center;

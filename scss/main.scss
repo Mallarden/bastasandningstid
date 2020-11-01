@@ -392,6 +392,7 @@ section {
     .our-expertise {
       width: 100%;
       .clients-container {
+        display:block;
         video {
           object-fit: cover;
         }
@@ -514,11 +515,11 @@ section {
     margin-top:200px;
   }
   .projects-container {
-    display: flex;
+    // display: flex;
   }
 a {
   width:100%;
-  .clients-container {
+  .projects-container {
     height: 300px;
     background-size: cover;
 
