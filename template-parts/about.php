@@ -4,7 +4,7 @@
 */
 get_header(); ?>
 <div id="primary" class="content">
-<div class="about-hero-image">
+<div class="about-hero-image" style="background-color:#<? the_field('background-color-hero')?>; background-image:url('<?php the_field('background-image-hero'); ?>;')">
   <div class="about-filter">
     <div class="container text-center">
       <!-- <video autoplay playsinline autoplay muted loop>

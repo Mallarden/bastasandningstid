@@ -19,11 +19,14 @@ p {
 }
 
 * {
-  // font-family: $primary !important;
+  font-family: $primary !important;
 
 }
 a:focus {
   text-decoration:none;
+}
+a {
+  text-decoration:none !important;
 }
 
 #primary {
@@ -48,9 +51,9 @@ body {
 
     &.active {
       background: $offWhite;
-      -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-      -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+      -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
       transition: 0.3s;
 
       & a {
@@ -405,7 +408,82 @@ section {
     }
   }
 }
-
+/* Testimonial CSS Code Start */
+/* background */
+.carousel-bg {
+  background-color: none;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+/* quote */
+.quote-image {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  padding-top: 60px;
+  width: 80px;
+}
+/* text-style */
+.testimonial-style .testimonial-caption-style {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 24px;
+  color: #354052;
+  line-height: 30px;
+  bottom: 40%;
+  text-shadow: none;
+  top: 10%;
+}
+.testimonial-style .testimonial-authors {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+  color: #354052;
+  line-height: 30px;
+  margin-top: 40px;
+}
+/* carousel-height-control */
+.testimonial-style .carousel-inner > .item {
+  padding-top: auto;
+  padding-bottom: auto;
+  height: 380px;
+}
+/* carousel-left-right-control */
+.testimonial-style .carousel-control.left {
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+.testimonial-style .carousel-control.right {
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+.testimonial-style .carousel-control {
+  color: #354052;
+}
+.testimonial-style .carousel-control:hover {
+  color: #354052;
+  text-decoration: none;
+  transition: background-color 1s ease;
+}
+/* indicators */
+.testimonial-style .carousel-indicators .active {
+  background-color: #fff;
+  width: 14px;
+  height: 14px;
+  transition: background 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.carousel-indicators {
+  width:70% !important;
+}
+.testimonial-style .carousel-indicators li {
+  border: 2px solid #354052;
+  background-color: #354052;
+  width:10px;
+  height:10px;
+}
+/* Textimonial CSS Code End */
 .third-section {
   padding-bottom:75px;
   h1 {
@@ -467,7 +545,7 @@ a {
 
         }
       
-      p {
+         p {
         display: flex !important;
         justify-content: center;
         align-items: center;
@@ -480,6 +558,44 @@ a {
     }
   }
 }
+/*******************************
+* ACCORDION WITH TOGGLE ICONS
+* Does not work properly if "in" is added after "collapse".
+* Get free snippets on bootpen.com
+*******************************/
+.panel-group .panel {
+  border-radius: 0;
+  box-shadow: none;
+  border-color: #EEEEEE;
+}
+
+.panel-default > .panel-heading {
+  padding: 0;
+  border-radius: 0;
+  color: #212121;
+  background-color: #FAFAFA;
+  border-color: #EEEEEE;
+}
+
+.panel-title {
+  font-size: 14px;
+}
+
+.panel-title > a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.more-less {
+  float: right;
+  color: #212121;
+}
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #EEEEEE;
+}
+
 }
 
 .fourth-section {
@@ -727,21 +843,31 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
     & > * {
       padding-top:100px;
     }
+    .row {
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+    }
     .black-box {
       padding:20px;
       background-color:black;
       color:white;
       text-align:center;
-      width:50%;
+      width:75%;
+      margin:0 auto;
       font-size: calc(24px + (26 - 10) * ((100vw - 900px) / (1100 - 300)));
       font-weight:bold;
       min-width: 70px;
+      -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
     }
     .services-first-container {
       .service-first-title h1 {
         font-weight: bold;
       }
     }
+    
   }
 }
 .services-second-section {
@@ -786,6 +912,9 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
       display: block;
       min-width: 75px;
       max-height: 125px;
+      -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
     }
   }
 }
@@ -814,14 +943,14 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
     font-weight: bold;
     text-align: center;
 }
-  background-color:#EBE2CD;
+  
   .container div {
     // height:100vh;
     // display: flex;
     // align-items: center;
     // justify-content: center;
     > *{
-    padding:20px 0px;
+    // padding:20px 0px;
   }
   
   }
@@ -857,13 +986,13 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
 }
 
 .about-second-section {
-  background-color:#2B2B2B;
+  background-color:#222;
   .about-first-container {
     color:white;
   }
   .container {
     > *{
-      padding:20px 0px;
+      padding:40px 0px;
     }
   .row:nth-child(2n+2) {
     flex-direction: row-reverse;
@@ -872,13 +1001,21 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
   .about-us-img {
     border:20px solid #393838;
     background-size:cover;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
   }
+}
+
+div.wpforms-container-full, div.wpforms-container-full .wpforms-form * {
+  font-weight:400 !important;
+  font-family:$primary !important;
 }
 .skew-bg {
   background:#fff;
   padding: 200px 0;
   transform: skew(0deg, -5deg);
-  margin-top: -400px;  
+  margin-top: -300px;  
   
   .content{
     transform: skew(0deg, 5deg);
@@ -905,7 +1042,7 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
       font-size: calc(34px + (36 - 10) * ((100vw - 900px) / (1100 - 300)));
       color:white;
     }
-    height: 90vh;
+    height: 75vh;
     padding: 0;
     margin: 0;
     display: flex;
@@ -947,9 +1084,9 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
     // padding:75px 0px;
     margin-top:10px;
     border-bottom:1px solid #EBE2CD;
-    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
     .blog-img-container {
       // height:300px;
       padding-left:0;
@@ -1004,9 +1141,9 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
   }
   .wp-block-columns {
     .wp-block-column {
-      -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-      -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+      -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
     }
   }
 }
@@ -1122,7 +1259,7 @@ main section h1 {
       // height: 75px;
       margin: 0 auto;
       display: block;
-      max-width: 75px;
+      // max-width: 75px;
     }
   }
   .blog-container {
@@ -1272,10 +1409,10 @@ main section h1 {
 .services-third-section {
   padding-bottom:100px;
   .case-container {
-    .clients-container {
-      -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-      -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    .bg-shadow{
+      -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
       img {
         border:10px solid white;
     

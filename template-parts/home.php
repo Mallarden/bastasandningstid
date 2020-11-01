@@ -123,33 +123,55 @@ get_header(); ?>
   </section>
   <div class="wave-bottom"></div>
   <section class="fifth-section pt-5">
-    <div class="section-wrapper pb-0">
-              <h2 class="fade-y" data-delighter="start:0.96;"><strong>Några fina ord.</strong></h2>
+    <div class="pb-0">
+              <h2 class="fade-y text-center" data-delighter="start:0.96;"><strong>Några fina ord.</strong></h2>
     <!-- TESTIMONIALS -->
 <section class="testimonials">
-	<div class="container">
 
-      <div class="row">
-        <div class="col-sm-12">
-          <div id="customers-testimonials" class="owl-carousel owl-theme">
-  <!-- <?php if( have_rows('sektion_4') ):
-              while ( have_rows('sektion_4') ) : the_row(); ?>
-            <!--TESTIMONIAL 1 -->
-            <div class="item">
-              <div class="shadow-effect">
-                <img class="img-circle" src="<?php the_sub_field('personbild'); ?>" alt="">
-                <p><?php the_sub_field('personinfo');?></p>
-              </div>
-              <div class="testimonial-name pt-4"><?php the_sub_field('personbeskrivning')?></div>
-            </div>
-            <!--END OF TESTIMONIAL 1 -->
-            <?php endwhile;	else :endif; ?> 
-          </div>
+
+  <div>
+    <img src="https://i.imgur.com/gZ5HY0U.png" class="img-responsive quote-image">
+  </div>
+  <!-- Carousel Start below -->
+  <div id="carousel1" class="carousel slide testimonial-style" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel1" data-slide-to="1"></li>
+      <li data-target="#carousel1" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="carousel-caption testimonial-caption-style">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae semper quis lectus nulla at volutpat diam.</p>
+          <p class="testimonial-authors">Person 1</p>
         </div>
       </div>
+      <div class="item">
+        <div class="carousel-caption testimonial-caption-style">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae semper quis lectus nulla at volutpat diam.</p>
+          <p class="testimonial-authors">Person 2</p>
+        </div>
       </div>
+      <div class="item">
+        <div class="carousel-caption testimonial-caption-style">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae semper quis lectus nulla at volutpat diam.</p>
+          <p class="testimonial-authors">Person 3</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+
+    <a class="left carousel-control" href="#carousel1" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
+    <a class="right carousel-control" href="#carousel1" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+  </div>
+      
     </section>
     <!-- END OF TESTIMONIALS -->
+    <?php if( have_rows('sektion_4') ):
+              while ( have_rows('sektion_4') ) : the_row(); ?>
     </div>
     <svg>
         <clipPath id="wave" clipPathUnits="objectBoundingBox">
@@ -161,3 +183,22 @@ get_header(); ?>
 </div><!-- #primary -->
 
 <?php get_footer();
+
+// <div class="row">
+//         <div class="col-sm-12">
+//           <div id="customers-testimonials" class="owl-carousel owl-theme">
+//   <!-- <?php if( have_rows('sektion_4') ):
+//               while ( have_rows('sektion_4') ) : the_row(); ?>
+//             <!--TESTIMONIAL 1 --><!--
+//             <div class="item">
+//               <div class="shadow-effect">
+//                 <img class="img-circle" src="<?php the_sub_field('personbild'); ?>" alt="">
+//                 <p><?php the_sub_field('personinfo');?></p>
+//               </div>
+//               <div class="testimonial-name pt-4"><?php the_sub_field('personbeskrivning')?></div>
+//             </div>
+//             <!--END OF TESTIMONIAL 1 --><!--
+//             <?php endwhile;	else :endif; ?> 
+//           </div>
+//         </div>
+//       </div>-->

@@ -1,6 +1,6 @@
 <?php 
 /*
-* Template Name: Blog
+* Template Name: Case
 */
 get_header(); ?>
 <div id="primary" class="content blog-page">

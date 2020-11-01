@@ -99,4 +99,23 @@
       },
     });
   });
+  function goToTwo() {
+    var num2 = "#group-2";
+
+    document.querySelector(num2).scrollIntoView();
+
+    $(num2).trigger("click");
+  }
+
+  /*******************************
+   * ACCORDION WITH TOGGLE ICONS
+   *******************************/
+  function toggleIcon(e) {
+    $(e.target)
+      .prev(".panel-heading")
+      .find(".more-less")
+      .toggleClass("glyphicon-plus glyphicon-minus");
+  }
+  $(".panel-group").on("hidden.bs.collapse", toggleIcon);
+  $(".panel-group").on("shown.bs.collapse", toggleIcon);
 })(jQuery, this);
