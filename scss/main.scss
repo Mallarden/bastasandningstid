@@ -19,7 +19,7 @@ p {
 }
 
 * {
-  font-family: $primary !important;
+  font-family: $primary;
 
 }
 a:focus {
@@ -425,7 +425,7 @@ section {
 }
 /* text-style */
 .testimonial-style .testimonial-caption-style {
-  font-family: "Roboto";
+  font-family: $primary;
   font-weight: 400;
   font-size: 24px;
   color: #354052;
@@ -435,7 +435,7 @@ section {
   top: 10%;
 }
 .testimonial-style .testimonial-authors {
-  font-family: "Roboto";
+  font-family: $primary;
   font-weight: 700;
   font-size: 20px;
   color: #354052;
@@ -699,8 +699,7 @@ footer {
   text-align:center;
   font-weight:bold;
   padding-top: 150px;
-    margin-top: -75px;
-
+    // margin-top: -75px;
 }
 
 .seventh-section {
@@ -954,6 +953,59 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
   }
   
   }
+}
+.case-hero-image {
+  color:white;
+  .flex-container {
+    h1 {
+      font-size: calc(34px + (36 - 10) * ((100vw - 900px) / (1100 - 300)));
+
+    }
+    height: 50vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.row {
+    width: auto;
+}
+.flex-item {
+    padding: 5px;
+    margin: 10px;
+    // line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+  
+  .container div {
+    // height:100vh;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    > *{
+    // padding:20px 0px;
+  }
+  
+  }
+}
+.pt-cv-wrapper img {
+  width:100%;
+}
+
+.pt-cv-title a {
+  color:#222;
+}
+
+.pt-cv-wrapper .btn-success {
+  background-color:#222;
+  border:0 !important;
+  &:hover {
+    background-color:$darkBeige;
+  }
+
 }
 .about-hero-image {
   background-image: url(../img/Exempel-studiosetup.jpg);
