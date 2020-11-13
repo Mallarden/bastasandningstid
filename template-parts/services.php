@@ -41,12 +41,12 @@ get_header(); ?>
   <?php if( have_rows('services_first_container') ):
         while ( have_rows('services_first_container') ) : the_row(); ?>
       <div class="row">
-        <div class="col-2">
+        <div class="col-3">
           <div class="black-box">
           <?php the_sub_field('services_first_numbers'); ?>
           </div>
         </div>
-        <div class="col-10">
+        <div class="col-9">
           <div class="services-first-container">
           
           <?php the_sub_field('services_first_text'); ?>

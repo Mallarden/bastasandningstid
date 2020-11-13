@@ -661,7 +661,7 @@ section .section-wrapper ul {
   right: 0;
 }
 .second-section .section-wrapper {
-  width: 65%;
+  width: 50%;
   margin-top: 75px !important;
 }
 .second-section .section-wrapper .our-expertise {
@@ -755,6 +755,7 @@ section .section-wrapper ul {
 
 .carousel-indicators {
   width: 70% !important;
+  bottom: -40px !important;
 }
 
 .testimonial-style .carousel-indicators li {
@@ -1102,7 +1103,7 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
   padding-bottom: 100px;
 }
 .services-first-section .container > * {
-  padding-top: 100px;
+  padding-top: 150px;
 }
 .services-first-section .container .row:nth-child(even) {
   flex-direction: row-reverse;
@@ -1177,7 +1178,7 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
   justify-content: center;
 }
 .tjanster-hero-image .flex-container h1 {
-  font-size: calc(34px + (36 - 10) * ((100vw - 900px) / (1100 - 300)));
+  font-size: calc(44px + (36 - 10) * ((100vw - 900px) / (1100 - 300)));
 }
 .tjanster-hero-image .row {
   width: auto;
@@ -1308,7 +1309,7 @@ div.wpforms-container-full, div.wpforms-container-full .wpforms-form * {
 }
 
 .blogg-hero-image {
-  height: 95vh;
+  height: 100vh;
   background-color: #222;
 }
 .blogg-hero-image .flex-container {
@@ -1490,6 +1491,18 @@ main section h1 {
 }
 
 @media only screen and (max-width: 991px) {
+  .blogg-hero-image .flex-container {
+    height: 80vh;
+  }
+
+  .about-second-section .about-us-img {
+    height: 300px;
+  }
+
+  .blogg-hero-image .container div > * {
+    padding: 0;
+  }
+
   .clients-container {
     height: 100%;
     background-size: cover;
@@ -1631,6 +1644,12 @@ footer div p {
 }
 .services-third-section .case-container:nth-child(2n+2) .clients-container {
   text-align: right;
+}
+
+.services-first-section .services-first-container h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {

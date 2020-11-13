@@ -29,10 +29,7 @@ get_header(); ?>
     </clipPath>
   </svg>
     <div class="container">
-    <h1 class=""><strong>Vilka är vi?</h1></strong>
-    <p>Vi är ett gäng energifyllda arbetsmyror som är lika förtjusta i Adobe-programmen och kamerateknik, som gröna siffror och tilltagande grafer i diverse marknadsautomation- och annonseringsverktyg. Hur kommer sig denna kombination? Jo för vi har utbildat oss till ingenjörer eller ekonomer, parallellt med att en hobby blev till en sysselsättning som blev till en heltidstjänst. 
-    <br/>
-Vi har fått det bästa av två världar som vi sedan integrerat: Resultatorienterad business rörlig bild.</p>
+      <?php the_field('vilka_ar_vi')?>
     </div>
   </section>
 <section class="about-second-section">

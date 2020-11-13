@@ -59,21 +59,23 @@ get_header(); ?>
       <div class="row our-expertise">
         <div class="col-lg-4 col-sm-12 fade-y" data-delighter="start:0.95;">
           <div class="clients-container">
-            <video class="myvideos" src="<?php echo get_stylesheet_directory_uri(); ?>/img/animation.mov" poster="<?php echo get_stylesheet_directory_uri(); ?>/img/animation-img.png" loop="" preload="" playsinline="true" webkit-playsinline="true" muted="" width="100%" height="auto" alt=""></video>
+            <video class="myvideos" src="<?php echo get_stylesheet_directory_uri(); ?>/img/1.Strategi-01.mp4" width="100%" autoplay="true" loop="true"></video>
             <h3 class="font-weight-bold">Foto</h3>
             <p>Allt från strategi, till konceptualisering & planering av produktion</p>
           </div>
         </div>
         <div class="col-lg-4 col-sm-12 fade-y middle-animation" data-delighter="sta.95;">
           <div class="clients-container">
-            <video class="myvideos" src="<?php echo get_stylesheet_directory_uri(); ?>/img/animation.mov" poster="<?php echo get_stylesheet_directory_uri(); ?>/img/animation-img.png" loop="" preload="" playsinline="true" webkit-playsinline="true" muted="" width="100%" height="auto" alt=""></video>
+            <video class="myvideos" src="<?php echo get_stylesheet_directory_uri(); ?>/img/2.Film-01.mp4" width="100%" autoplay="true" loop="true"></video>
+            <!-- <video class="myvideos" src="<?php echo get_stylesheet_directory_uri(); ?>/img/2.Film-01.mp4" poster="<?php echo get_stylesheet_directory_uri(); ?>/img/animation-img.png" loop="" preload="" playsinline="true" webkit-playsinline="true" muted="" width="100%" height="auto" alt=""></video> -->
+
             <h3 class="font-weight-bold">Produktion</h3>
             <p>Allt från strategi, till konceptualisering & planering av produktion</p>
           </div>
         </div>
         <div class="col-lg-4 col-sm-12 fade-y" data-delighter="start:0.95;">
           <div class="clients-container">
-            <video class="myvideos" src="<?php echo get_stylesheet_directory_uri(); ?>/img/animation.mov" poster="<?php echo get_stylesheet_directory_uri(); ?>/img/animation-img.png" loop="" preload="" playsinline="true" webkit-playsinline="true" muted="" width="100%" height="auto" alt=""></video>
+            <video class="myvideos" src="<?php echo get_stylesheet_directory_uri(); ?>/img/3.Annons-01.mp4" width="100%" autoplay="true" loop="true"></video>
             <h3 class="font-weight-bold">Distribution</h3>
             <p>Allt från strategi, till konceptualisering & planering av produktion</p>
           </div>
@@ -189,7 +191,7 @@ get_header(); ?>
 //           <div id="customers-testimonials" class="owl-carousel owl-theme">
 //   <!-- <?php if( have_rows('sektion_4') ):
 //               while ( have_rows('sektion_4') ) : the_row(); ?>
-//             <!--TESTIMONIAL 1 --><!--
+<!--
 //             <div class="item">
 //               <div class="shadow-effect">
 //                 <img class="img-circle" src="<?php the_sub_field('personbild'); ?>" alt="">

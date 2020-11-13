@@ -23,9 +23,9 @@
 							<p>Address</p>
 						</b>
 						<ul>
-							<li>48 Warwick Street</li>
-							<li>London, W1B 5AW</li>
-							<li>UNITED KINGDOM</li>
+							<li>Drakegatan 7</li>
+							<li>Göteborg</li>
+							<li>Sverige</li>
 						</ul>
 					</div>
 					<div class="col-lg-6">
@@ -39,7 +39,7 @@
 					</div>
 					<div class="col-lg-3 side-col">
 						<b>
-							<p>PHONE & EMAIL</p>
+							<p>Telefon & Email</p>
 						</b>
 						<ul>
 							<li>+44203 542 0986</li>
@@ -48,7 +48,7 @@
 					</div>
 				</div>
 				<p class="copyright mt-3">
-					All rights reserved Northmire
+					All rights reserved Bästa Sändningstid
 				</p>
 			</footer>
 			<!-- /footer -->
