@@ -12,7 +12,7 @@ get_header(); ?>
     <span>
     Content som:
     </span>
-    <span id="hero-word-switcher" style="width: 183px;" class="in">
+    <span id="hero-word-switcher" style="width: 183px;" class="in ml-1">
         <strong class="" data-oid="0" data-width="">Värmer</strong>
         <strong data-oid="1" data-width="" class="">Flyger</strong>
         <strong data-oid="2" data-width="" class="">Illustrerar</strong>
@@ -85,7 +85,29 @@ get_header(); ?>
     </section>
     <section class="third-section">
     <h1 class=""><strong>Projects</strong></h1>
-    <div class="third-section-box">    
+    <div class="third-section-box"></div>
+    <div class="container">
+    <?php if( have_rows('sektion_2') ):
+        while ( have_rows('sektion_2') ) : the_row(); ?>
+    <div class="w-100 row ml-0 case-container pt-4">
+      <div class="col-lg-6 col-sm-12 fade-y" data-delighter="start:0.90;">
+        <div class="clients-container w-100 bg-shadow">
+          <img src="<?php the_sub_field('section-2-image'); ?>">
+        </div>
+      </div>
+      <div class="col-lg-6 col-sm-12 fade-y d-flex align-items-center" data-delighter="start:0.90;">
+        <div class="clients-container w-100">
+        <img class="projects-logga mt-3" src="<?php the_sub_field('section_2_logga'); ?>">
+          <p><?php the_sub_field('section_2_infotext'); ?></p>
+          <a href="<?php the_sub_field('section_2_ahref'); ?>">
+            <button type="button" class="btn btn-primary">Läs mer</button>
+        </a>
+        </div>
+      </div>
+    </div>
+    <?php endwhile;	else :endif; ?>
+    </div>
+    <!-- <div class="third-section-box">    
       </div>
       <div class="container">
       <div class="row projects-container">
@@ -100,7 +122,7 @@ get_header(); ?>
         </a>
         <?php endwhile;	else :endif; ?>
         </div>
-        </div>
+        </div> -->
     </section>
     <section class="fourth-section">
       <div class="section-wrapper fourth-section-content">
@@ -129,8 +151,6 @@ get_header(); ?>
               <h2 class="fade-y text-center" data-delighter="start:0.96;"><strong>Några fina ord.</strong></h2>
     <!-- TESTIMONIALS -->
 <section class="testimonials">
-
-
   <div>
     <img src="https://i.imgur.com/gZ5HY0U.png" class="img-responsive quote-image">
   </div>
@@ -174,33 +194,15 @@ get_header(); ?>
     <!-- END OF TESTIMONIALS -->
     <?php if( have_rows('sektion_4') ):
               while ( have_rows('sektion_4') ) : the_row(); ?>
-    </div>
+   
     <svg>
         <clipPath id="wave" clipPathUnits="objectBoundingBox">
           <path class="st0" d="M1,0c0,0-0.3,0.1-0.5,0.1S0.3,0,0,0.1V1h1L1,0z"/>
         </clipPath>
 </svg>
+<?php endwhile;	else :endif; ?> 
   </section>
 
 </div><!-- #primary -->
 
 <?php get_footer();
-
-// <div class="row">
-//         <div class="col-sm-12">
-//           <div id="customers-testimonials" class="owl-carousel owl-theme">
-//   <!-- <?php if( have_rows('sektion_4') ):
-//               while ( have_rows('sektion_4') ) : the_row(); ?>
-<!--
-//             <div class="item">
-//               <div class="shadow-effect">
-//                 <img class="img-circle" src="<?php the_sub_field('personbild'); ?>" alt="">
-//                 <p><?php the_sub_field('personinfo');?></p>
-//               </div>
-//               <div class="testimonial-name pt-4"><?php the_sub_field('personbeskrivning')?></div>
-//             </div>
-//             <!--END OF TESTIMONIAL 1 --><!--
-//             <?php endwhile;	else :endif; ?> 
-//           </div>
-//         </div>
-//       </div>-->

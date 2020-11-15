@@ -39,7 +39,6 @@ a {
 
 body {
   overflow-x: hidden;
-
   header {
     height: 75px;
     background-color: transparent;
@@ -368,6 +367,7 @@ section {
   }
 }
 
+
 .second-section {
   .second-section-box {
     width: 80%;
@@ -500,6 +500,26 @@ section {
       right: 0;
     }
   } 
+  .case-container {
+    .clients-container {
+      .projects-logga{
+        // height:50px;
+        max-width:100px;
+        margin:0 auto;
+        display:block;
+      }
+      button {
+        float:right;
+        background-color:#222;
+        border:0;
+        outline:0;
+        font-weight:bold;
+        &:hover {
+          background-color:#433;
+        }
+      }
+    }
+  }
   .third-section-box {
     width: 80%;
     background-color:#222 !important;
@@ -1148,6 +1168,7 @@ div.wpforms-container-full, div.wpforms-container-full .wpforms-form * {
     .blog-img-container {
       // height:300px;
       padding-left:0;
+      padding-right: 0;
     }
     .more-link {
       color:#222;
@@ -1179,6 +1200,9 @@ div.wpforms-container-full, div.wpforms-container-full .wpforms-form * {
 }
 .blog-page {
   background-color:$offWhite;
+  .case-grid {
+    padding-bottom:50px;
+  }
 }
 
 .single-blog-page {
@@ -1235,7 +1259,7 @@ main section h1 {
       align-items: center;
       font-size: 1.8em;
       margin: 0 auto;
-      letter-spacing: 4px;
+      // letter-spacing: 4px;
       span {
       }
     }
@@ -1308,11 +1332,30 @@ main section h1 {
 }
 
 @media only screen and (max-width: 991px) {
+  .sixth-section {
+    padding-top:50px;
+    clip-path: none;
+  }
+  .services-second-section .clients-container img {
+    max-height: 75px;
+  }
+  .services-first-section .container > * {
+    padding-top:70px;
+  }
+  .services-first-section .container {
+    .black-box {
+      width:75px;
+      margin-bottom:25px;
+    }
+    .services-first-container {
+      text-align:center;
+    }
+  }
   .blogg-hero-image .flex-container {
     height:80vh;
   }
   .about-second-section .about-us-img {
-    height:300px;
+    // height:300px;
   }
   .blogg-hero-image .container div > * {
     padding:0;
@@ -1320,7 +1363,7 @@ main section h1 {
   .clients-container {
     height: 100%;
     background-size: cover;
-    display: flex;
+    // display: flex;
     align-items: center;
     img {
       // height: 75px;
@@ -1342,7 +1385,7 @@ main section h1 {
   .about-second-section {
     .container {
       img {
-        width:75%;
+        width:100%;
         display: block;
         margin:0 auto;
       }
@@ -1354,8 +1397,14 @@ main section h1 {
     height:200px;
     position:absolute;
   }
-  .third-section .third-section-box {
-    width:100%;
+  .third-section {
+    .container {
+      margin-top:100px;
+    }
+    .third-section-box {
+      width:100%;
+      height:100px;
+    }
   }
   .services-second-section .container-fluid {
     max-width:90%;
@@ -1373,6 +1422,7 @@ main section h1 {
     }
     h1 {
       padding:20px 0px;
+      text-align:center;
     }
     .case-container {
     padding:20px 0px;
