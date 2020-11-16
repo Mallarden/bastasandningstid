@@ -520,6 +520,8 @@ section {
         right: 0;
         color:white;
         height:100%;
+        margin-right: 15px;
+        margin-left: 15px;
         .project-box-container {
           width:90%;
           margin:0 auto;
@@ -533,12 +535,12 @@ section {
         cursor:pointer;
         background: rgba(0, 0, 0, 0.3);
         height:100%;
+
       }
       .projects-logga {
-        // height:50px;
         max-height:35px;
-        margin:0 auto;
         display:block;
+        margin-left: auto;
       }
       button {
         float:right;

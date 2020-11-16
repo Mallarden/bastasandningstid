@@ -91,12 +91,12 @@ get_header(); ?>
     <?php if( have_rows('sektion_2') ):
         while ( have_rows('sektion_2') ) : the_row(); ?>
     
-      <div class="col-lg-6 px-0 col-sm-12 fade-y" data-delighter="start:0.90;">
+      <div class="col-lg-6 col-sm-12 fade-y" data-delighter="start:0.90;">
         <div class="clients-container w-100 bg-shadow">
           <img src="<?php the_sub_field('section-2-image'); ?>">
             <div class="hover-this-project">
               <div class="project-box-container">
-              <img class="projects-logga mt-1" src="<?php the_sub_field('section_2_logga'); ?>">
+              <img class="projects-logga mt-5 mb-1" src="<?php the_sub_field('section_2_logga'); ?>">
               <p><?php the_sub_field('section_2_infotext'); ?></p>
               <a href="<?php the_sub_field('section_2_ahref'); ?>">
                 <button type="button" class="btn btn-primary">Läs mer</button>

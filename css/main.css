@@ -807,6 +807,8 @@ section .section-wrapper ul {
   right: 0;
   color: white;
   height: 100%;
+  margin-right: 15px;
+  margin-left: 15px;
   transition: 0.3s ease-in-out;
 }
 .third-section .case-container .clients-container .hover-this-project .project-box-container {
@@ -822,8 +824,8 @@ section .section-wrapper ul {
 }
 .third-section .case-container .clients-container .projects-logga {
   max-height: 35px;
-  margin: 0 auto;
   display: block;
+  margin-left: auto;
 }
 .third-section .case-container .clients-container button {
   float: right;
