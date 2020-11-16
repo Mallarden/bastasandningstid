@@ -96,7 +96,7 @@ get_header(); ?>
           <img src="<?php the_sub_field('section-2-image'); ?>">
             <div class="hover-this-project">
               <div class="project-box-container">
-              <img class="projects-logga mt-5 mb-1" src="<?php the_sub_field('section_2_logga'); ?>">
+              <img class="projects-logga mt-5 mb-2" src="<?php the_sub_field('section_2_logga'); ?>">
               <p><?php the_sub_field('section_2_infotext'); ?></p>
               <a href="<?php the_sub_field('section_2_ahref'); ?>">
                 <button type="button" class="btn btn-primary">Läs mer</button>
