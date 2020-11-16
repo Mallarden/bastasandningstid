@@ -96,63 +96,37 @@ get_header(); ?>
           <img src="<?php the_sub_field('section-2-image'); ?>">
             <div class="hover-this-project">
               <div class="project-box-container">
-              <img class="projects-logga mt-5 mb-2" src="<?php the_sub_field('section_2_logga'); ?>">
+              <!-- <img class="projects-logga mt-5 mb-2" src="<?php the_sub_field('section_2_logga'); ?>"> -->
               <p><?php the_sub_field('section_2_infotext'); ?></p>
               <a href="<?php the_sub_field('section_2_ahref'); ?>">
                 <button type="button" class="btn btn-primary">Läs mer</button>
               </a>
               </div>
           </div>
-        
         </div>
       </div>
-      <!-- <div class="col-lg-6 col-sm-12 fade-y d-flex align-items-center" data-delighter="start:0.90;">
-        <div class="clients-container w-100">
-        <img class="projects-logga mt-3" src="<?php the_sub_field('section_2_logga'); ?>">
-          <p><?php the_sub_field('section_2_infotext'); ?></p>
-          <a href="<?php the_sub_field('section_2_ahref'); ?>">
-            <button type="button" class="btn btn-primary">Läs mer</button>
-        </a>
-        </div>
-      </div> -->
-   
     <?php endwhile;	else :endif; ?>
     </div>
      </div>
-    <!-- <div class="third-section-box">    
-      </div>
-      <div class="container">
-      <div class="row projects-container">
-    <?php if( have_rows('sektion_2') ):
-              while ( have_rows('sektion_2') ) : the_row(); ?>
-              <a href="<?php the_sub_field('section_2_ahref'); ?>" class="col-lg-6 col-sm-6 p-0 fade-y" data-delighter="start:0.95;">
-      
-          <div class="projects-container" style="background-image:url('<?php the_sub_field('section-2-image'); ?>')">
-          <img src="<?php the_sub_field('section_2_logga'); ?>">
-          <p><?php the_sub_field('section_2_infotext'); ?></p>
-          </div>
-        </a>
-        <?php endwhile;	else :endif; ?>
-        </div>
-        </div> -->
     </section>
     <section class="fourth-section">
       <div class="section-wrapper fourth-section-content">
         <h2 class="fade-y" data-delighter="start:0.96;"><strong>Väx tillsammans med oss!</strong></h2>
-          <?php if( have_rows('sektion_3') ):
+        <? the_field('logo-slider') ?>
+          <!-- <?php if( have_rows('sektion_3') ):
 							while ( have_rows('sektion_3') ) : the_row(); ?>
         <div class="row">
           <div class="col-sm-12">
             <div class="d-flex pt-2" style="flex-flow: no-wrap;">
               <?php if( have_rows('direct_impact') ):
 							while ( have_rows('direct_impact') ) : the_row(); ?>
-              <div class="col-md-2 col-sm-4 col-xs-4 fade-y" style="" data-delighter="start:0.92;">
+              <div class="col-md-4 col-sm-4 col-xs-4 fade-y" style="" data-delighter="start:0.92;">
                 <img class="mt-3 d-flex" style="margin: 0 auto;" src="<? the_sub_field('direct_impact_bild');?>" />
               </div>
               <?php endwhile;	else :endif; ?>
             </div>
           </div>
-          <?php endwhile;	else :endif; ?>
+          <?php endwhile;	else :endif; ?> -->
         </div>
       </div>
 
@@ -178,22 +152,37 @@ get_header(); ?>
     <div class="carousel-inner">
       <div class="item active">
         <div class="carousel-caption testimonial-caption-style">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae semper quis lectus nulla at volutpat diam.</p>
-          <p class="testimonial-authors">Person 1</p>
+        <div class="carousel-container">
+          <p>”Northmire och Jakob hjälper oss med vår digitala marknadsföring, allt från filmproduktion till framtagande av olika typer av innehåll till våra kampanjer. Jakob är snabb, effektiv och har bra kreativ höjd och levererar alltid hög kvalitet. Rekommenderar starkt Jakob till alla bolag som behöver få hjälp med sin digitala marknadsföring på ett kostnadseffektivt sätt!”</p>
+          </div>
+          <div class="d-flex justify-content-center pt-3 carousel-info-container" style="">
+            <img style="" src="<?php echo get_stylesheet_directory_uri(); ?>/img/kund.png" />
+            <p class="testimonial-authors">Person 1</p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="item">
+        <div class="carousel-caption testimonial-caption-style">
+        <div class="carousel-container">
+        <p>”Northmire och Jakob hjälper oss med vår digitala marknadsföring, allt från filmproduktion till framtagande av olika typer av innehåll till våra kampanjer. Jakob är snabb, effektiv och har bra kreativ höjd och levererar alltid hög kvalitet. Rekommenderar starkt Jakob till alla bolag som behöver få hjälp med sin digitala marknadsföring på ett kostnadseffektivt sätt!”</p>
+          </div>
+          <div class="d-flex justify-content-center pt-3" style="width:50%; margin:0 auto;">
+            <img style="max-width: 150px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/kund.png" />
+            <p class="testimonial-authors">Person 1</p>
+          </div>
         </div>
       </div>
       <div class="item">
         <div class="carousel-caption testimonial-caption-style">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae semper quis lectus nulla at volutpat diam.</p>
-          <p class="testimonial-authors">Person 2</p>
+        <div class="carousel-container">
+        <p>”Northmire och Jakob hjälper oss med vår digitala marknadsföring, allt från filmproduktion till framtagande av olika typer av innehåll till våra kampanjer. Jakob är snabb, effektiv och har bra kreativ höjd och levererar alltid hög kvalitet. Rekommenderar starkt Jakob till alla bolag som behöver få hjälp med sin digitala marknadsföring på ett kostnadseffektivt sätt!”</p>
+          </div>
+          <div class="d-flex justify-content-center pt-3" style="width:50%; margin:0 auto;">
+            <img style="max-width: 150px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/kund.png" />
+            <p class="testimonial-authors">Person 1</p>
+          </div>
         </div>
-      </div>
-      <div class="item">
-        <div class="carousel-caption testimonial-caption-style">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae semper quis lectus nulla at volutpat diam.</p>
-          <p class="testimonial-authors">Person 3</p>
-        </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- Controls -->

@@ -77,13 +77,16 @@
     //       this.pause();
     //     });
     // });
+
     $("#customers-testimonials").owlCarousel({
       loop: true,
       center: true,
-      items: 3,
+      items: 1,
       margin: 0,
+      autoHeight: true,
       autoplay: true,
       dots: true,
+
       autoplayTimeout: 3500,
       smartSpeed: 450,
       responsive: {
@@ -99,6 +102,7 @@
       },
     });
   });
+
   function goToTwo() {
     var num2 = "#group-2";
 
