@@ -349,8 +349,17 @@ h4 {
   font-family: "Source Sans Pro", sans-serif !important;
 }
 
+html {
+  overflow-x: hidden !important;
+}
+
 h2 {
   font-weight: bolder;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
 }
 
 p {
@@ -797,6 +806,7 @@ section .section-wrapper ul {
   left: 0;
   right: 0;
   color: white;
+  height: 100%;
   transition: 0.3s ease-in-out;
 }
 .third-section .case-container .clients-container .hover-this-project .project-box-container {
@@ -807,6 +817,8 @@ section .section-wrapper ul {
   opacity: 1;
   transition: 0.3s ease-in-out;
   cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+  height: 100%;
 }
 .third-section .case-container .clients-container .projects-logga {
   max-height: 35px;

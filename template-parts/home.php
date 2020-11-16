@@ -91,7 +91,7 @@ get_header(); ?>
     <?php if( have_rows('sektion_2') ):
         while ( have_rows('sektion_2') ) : the_row(); ?>
     
-      <div class="col-lg-6 col-sm-12 fade-y" data-delighter="start:0.90;">
+      <div class="col-lg-6 px-0 col-sm-12 fade-y" data-delighter="start:0.90;">
         <div class="clients-container w-100 bg-shadow">
           <img src="<?php the_sub_field('section-2-image'); ?>">
             <div class="hover-this-project">
@@ -146,7 +146,7 @@ get_header(); ?>
             <div class="d-flex pt-2" style="flex-flow: no-wrap;">
               <?php if( have_rows('direct_impact') ):
 							while ( have_rows('direct_impact') ) : the_row(); ?>
-              <div class="col-lg-2 col-md-2 col-sm-2 fade-y" style="" data-delighter="start:0.92;">
+              <div class="col-md-2 col-sm-4 col-xs-4 fade-y" style="" data-delighter="start:0.92;">
                 <img class="mt-3 d-flex" style="margin: 0 auto;" src="<? the_sub_field('direct_impact_bild');?>" />
               </div>
               <?php endwhile;	else :endif; ?>

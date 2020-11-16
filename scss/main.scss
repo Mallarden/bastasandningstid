@@ -11,8 +11,16 @@ h4 {
   font-family: $primary !important;
 }
 
+html {
+  overflow-x: hidden !important;;
+}
+
 h2 {
   font-weight: bolder;
+}
+body, html{
+  margin:0;
+  padding:0;
 }
 
 p {
@@ -33,6 +41,7 @@ a {
 #primary {
   // margin-top: 75px;
 }
+
 
 .tjanster #primary {
   background-color: #EDEDED;
@@ -510,6 +519,7 @@ section {
         left: 0;
         right: 0;
         color:white;
+        height:100%;
         .project-box-container {
           width:90%;
           margin:0 auto;
@@ -521,6 +531,8 @@ section {
         opacity:1;
         transition:0.3s ease-in-out;
         cursor:pointer;
+        background: rgba(0, 0, 0, 0.3);
+        height:100%;
       }
       .projects-logga {
         // height:50px;
