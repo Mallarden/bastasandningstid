@@ -50,7 +50,7 @@ get_header(); ?>
     <?php if( have_rows('services_repeater') ):
         while ( have_rows('services_repeater') ) : the_row(); ?>
     <div class="w-100 d-flex case-container ">
-      <div class="col-lg-2 col-sm-12 fade-y pt-4" data-delighter="start:0.90;">
+      <div class="col-lg-2 col-sm-12 fade-y" data-delighter="start:0.90;">
         <div class="clients-container w-100">
           <!-- style="background-image:url('<?php the_sub_field('services'); ?>')"> -->
           <img src="<?php the_sub_field('services'); ?>">
