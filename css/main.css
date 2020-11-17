@@ -367,7 +367,7 @@ p {
 }
 
 * {
-  font-family: "Source Sans Pro", sans-serif !important;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 a:focus {
@@ -376,6 +376,10 @@ a:focus {
 
 a {
   text-decoration: none !important;
+}
+
+#primary {
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .tjanster #primary {
@@ -479,7 +483,7 @@ body header .support-btn {
 }
 
 .section-start {
-  background-color: white;
+  background-color: #EDEDED;
 }
 .section-start > section {
   padding-top: 150px;
@@ -680,11 +684,12 @@ section .section-wrapper ul {
 .second-section .section-wrapper .our-expertise {
   width: 100%;
 }
-.second-section .section-wrapper .our-expertise .clients-container {
+.second-section .section-wrapper .our-expertise .vara-omraden {
   display: block;
+  font-family: "Source Sans Pro", sans-serif;
   text-align: center;
 }
-.second-section .section-wrapper .our-expertise .clients-container video {
+.second-section .section-wrapper .our-expertise .vara-omraden video {
   object-fit: cover;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
@@ -718,6 +723,7 @@ section .section-wrapper ul {
   bottom: 40%;
   text-shadow: none;
   top: 10%;
+  background: white;
   height: 100%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
@@ -765,12 +771,18 @@ section .section-wrapper ul {
   background: none;
   box-shadow: none;
   text-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .testimonial-style .carousel-control.right {
   background: none;
   box-shadow: none;
   text-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .testimonial-style .carousel-control {
@@ -832,9 +844,10 @@ section .section-wrapper ul {
   left: 0;
   right: 0;
 }
-.third-section .case-container .clients-container {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+.third-section .case-container .project-item {
   border: 20px solid #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background: white;
 }
 .third-section .case-container .clients-container .hover-this-project {
   opacity: 0;
@@ -844,19 +857,20 @@ section .section-wrapper ul {
   right: 0;
   color: white;
   height: 100%;
-  margin-right: 15px;
-  margin-left: 15px;
+  display: flex;
+  align-items: center;
   transition: 0.3s ease-in-out;
 }
 .third-section .case-container .clients-container .hover-this-project .project-box-container {
   width: 90%;
   margin: 0 auto;
+  height: auto;
 }
 .third-section .case-container .clients-container:hover .hover-this-project {
   opacity: 1;
   transition: 0.3s ease-in-out;
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.6);
   height: 100%;
 }
 .third-section .case-container .clients-container .projects-logga {
@@ -872,7 +886,7 @@ section .section-wrapper ul {
   font-weight: bold;
 }
 .third-section .case-container .clients-container button:hover {
-  background-color: #EBE2CD;
+  color: #222;
 }
 .third-section .third-section-box {
   width: 80%;
@@ -886,7 +900,7 @@ section .section-wrapper ul {
   padding-bottom: 50px;
 }
 .third-section .container {
-  margin-top: 200px;
+  margin-top: 125px;
 }
 .third-section a {
   width: 100%;
@@ -968,10 +982,10 @@ section .section-wrapper ul {
 }
 
 .fifth-section {
-  background-color: white !important;
+  background-color: #EDEDED !important;
 }
 .fifth-section section {
-  background-color: white !important;
+  background-color: #EDEDED !important;
 }
 .fifth-section .personbild {
   margin: 0 auto;
@@ -1199,19 +1213,16 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
 .services-first-section .container > * {
   padding-top: 150px;
 }
-.services-first-section .container .row:nth-child(even) {
-  flex-direction: row-reverse;
-}
 .services-first-section .container .black-box {
   padding: 20px;
   background-color: black;
   color: white;
   text-align: center;
-  width: 75%;
-  margin: 0 auto;
+  max-width: 50%;
+  float: right;
   font-size: calc(24px + (26 - 10) * ((100vw - 900px) / (1100 - 300)));
   font-weight: bold;
-  min-width: 70px;
+  min-width: 100px;
   -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
@@ -1319,6 +1330,7 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
 }
 
 .pt-cv-wrapper .btn-success {
+  font-weight: 600;
   background-color: #222;
   border: 0 !important;
 }
@@ -1478,20 +1490,6 @@ div.wpforms-container-full, div.wpforms-container-full .wpforms-form * {
   letter-spacing: 1px;
 }
 
-.blog-page {
-  background-color: #f8f8f8;
-}
-.blog-page .case-grid {
-  padding-bottom: 50px;
-}
-
-.single-blog-page {
-  padding-bottom: 100px;
-}
-.single-blog-page img {
-  width: 100vw;
-}
-
 .project-content {
   position: relative;
   margin-top: -100px;
@@ -1506,8 +1504,31 @@ div.wpforms-container-full, div.wpforms-container-full .wpforms-form * {
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
 }
 
-main section h1 {
-  display: none;
+main {
+  background-color: #EDEDED;
+}
+
+.blog-page {
+  background-color: #f8f8f8;
+}
+.blog-page .case-grid {
+  padding-bottom: 50px;
+}
+
+.single-blog-page {
+  padding-bottom: 150px;
+}
+.single-blog-page .blog-info {
+  padding-top: 20px;
+}
+.single-blog-page h1 {
+  font-weight: bold;
+}
+.single-blog-page img {
+  width: 100vw;
+}
+.single-blog-page .blog-content {
+  padding-top: 45px;
 }
 
 /*------------------------------------*\
@@ -1516,6 +1537,13 @@ main section h1 {
 @media only screen and (max-width: 1200px) {
   section .section-wrapper {
     width: 90% !important;
+    padding: 50px 0px 50px 0px;
+  }
+  section .section-wrapper h1 {
+    font-size: 2.2rem;
+  }
+  section .section-wrapper h3 {
+    font-size: 2rem;
   }
 
   .citat-wrapper {
@@ -1588,6 +1616,14 @@ main section h1 {
 }
 
 @media only screen and (max-width: 991px) {
+  .vara-omraden {
+    margin-top: 40px;
+  }
+
+  .third-section .case-container .project-item {
+    margin-top: 20px;
+  }
+
   /* text-style */
   .testimonials {
     width: 100%;
@@ -1601,6 +1637,7 @@ main section h1 {
     line-height: 30px;
     bottom: 40%;
     text-shadow: none;
+    z-index: 0;
     top: 10%;
     height: 100%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -1624,9 +1661,6 @@ main section h1 {
     font-size: 12px;
   }
 
-  .third-section .case-container .clients-container {
-    margin-top: 25px;
-  }
   .third-section .case-container .clients-container .hover-this-project .project-box-container {
     font-size: 0.7em;
   }
@@ -1640,9 +1674,11 @@ main section h1 {
   .sixth-section {
     padding-top: 50px;
     clip-path: none;
+    margin-top: -275px;
   }
 
   .services-second-section .clients-container img {
+    margin-bottom: 10px;
     max-height: 75px;
   }
 
@@ -1652,9 +1688,14 @@ main section h1 {
 
   .services-first-section .container .black-box {
     width: 75px;
-    margin-bottom: 25px;
+    float: unset;
+    margin: 0 auto;
+    margin-bottom: 35px;
   }
   .services-first-section .container .services-first-container {
+    text-align: center;
+  }
+  .services-first-section .container .services-first-container h1 {
     text-align: center;
   }
 
@@ -1816,7 +1857,10 @@ footer div p {
 .services-first-section .services-first-container h1 {
   font-weight: bold;
   font-size: 2rem;
-  text-align: center;
+  text-align: left;
+}
+.services-first-section .services-first-container h1:nth-child(2) {
+  text-align: right !important;
 }
 
 @media only screen and (max-width: 768px) {

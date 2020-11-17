@@ -58,14 +58,14 @@ get_header(); ?>
       <div class="section-wrapper row mt-5">
       <div class="row our-expertise">
         <div class="col-lg-4 col-sm-12 fade-y" data-delighter="start:0.95;">
-          <div class="clients-container">
+          <div class="vara-omraden">
             <video class="myvideos" src="<?php echo get_stylesheet_directory_uri(); ?>/img/1.Strategi-01.mp4" width="100%" autoplay="true" loop="true"></video>
             <h3 class="font-weight-bold">Foto</h3>
             <p>Allt från strategi, till konceptualisering & planering av produktion</p>
           </div>
         </div>
         <div class="col-lg-4 col-sm-12 fade-y middle-animation" data-delighter="sta.95;">
-          <div class="clients-container">
+          <div class="vara-omraden">
             <video class="myvideos" src="<?php echo get_stylesheet_directory_uri(); ?>/img/2.Film-01.mp4" width="100%" autoplay="true" loop="true"></video>
             <!-- <video class="myvideos" src="<?php echo get_stylesheet_directory_uri(); ?>/img/2.Film-01.mp4" poster="<?php echo get_stylesheet_directory_uri(); ?>/img/animation-img.png" loop="" preload="" playsinline="true" webkit-playsinline="true" muted="" width="100%" height="auto" alt=""></video> -->
 
@@ -74,7 +74,7 @@ get_header(); ?>
           </div>
         </div>
         <div class="col-lg-4 col-sm-12 fade-y" data-delighter="start:0.95;">
-          <div class="clients-container">
+          <div class="vara-omraden">
             <video class="myvideos" src="<?php echo get_stylesheet_directory_uri(); ?>/img/3.Annons-01.mp4" width="100%" autoplay="true" loop="true"></video>
             <h3 class="font-weight-bold">Distribution</h3>
             <p>Allt från strategi, till konceptualisering & planering av produktion</p>
@@ -84,14 +84,14 @@ get_header(); ?>
       </div>
     </section>
     <section class="third-section">
-    <h1 class=""><strong>Projects</strong></h1>
+    <h1 class=""><strong>Urval av case</strong></h1>
     <div class="third-section-box"></div>
     <div class="container">
-    <div class="w-100 ml-0 case-container pt-4">
+    <div class="w-100 row ml-0 case-container pt-4">
     <?php if( have_rows('sektion_2') ):
         while ( have_rows('sektion_2') ) : the_row(); ?>
     
-      <div class="col-lg-6 col-sm-12 fade-y" data-delighter="start:0.90;">
+      <div class="col-lg-5 offset-lg-1 px-0 col-sm-12 project-item fade-y" data-delighter="start:0.90;">
         <div class="clients-container w-100 bg-shadow">
           <img src="<?php the_sub_field('section-2-image'); ?>">
             <div class="hover-this-project">
@@ -111,7 +111,7 @@ get_header(); ?>
     </section>
     <section class="fourth-section">
       <div class="section-wrapper fourth-section-content">
-        <h2 class="fade-y" data-delighter="start:0.96;"><strong>Väx tillsammans med oss!</strong></h2>
+        <h2 class="fade-y" data-delighter="start:0.96;"><strong>Väx tillsammans med oss precis som dess företag gör.</strong></h2>
         <? the_field('logo-slider') ?>
           <!-- <?php if( have_rows('sektion_3') ):
 							while ( have_rows('sektion_3') ) : the_row(); ?>
@@ -134,7 +134,7 @@ get_header(); ?>
   <div class="wave-bottom"></div>
   <section class="fifth-section pt-5">
     <div class="pb-0">
-              <h2 class="fade-y text-center" data-delighter="start:0.96;"><strong>Några fina ord.</strong></h2>
+              <h1 class="fade-y text-center" data-delighter="start:0.96;"><strong>Några fina ord.</strong></h1>
     <!-- TESTIMONIALS -->
 <section class="testimonials">
   <div>
@@ -161,13 +161,13 @@ get_header(); ?>
           </div>
         </div>
       </div>
-      <!-- <div class="item">
+      <div class="item">
         <div class="carousel-caption testimonial-caption-style">
         <div class="carousel-container">
-        <p>”Northmire och Jakob hjälper oss med vår digitala marknadsföring, allt från filmproduktion till framtagande av olika typer av innehåll till våra kampanjer. Jakob är snabb, effektiv och har bra kreativ höjd och levererar alltid hög kvalitet. Rekommenderar starkt Jakob till alla bolag som behöver få hjälp med sin digitala marknadsföring på ett kostnadseffektivt sätt!”</p>
+          <p>”Northmire och Jakob hjälper oss med vår digitala marknadsföring, allt från filmproduktion till framtagande av olika typer av innehåll till våra kampanjer. Jakob är snabb, effektiv och har bra kreativ höjd och levererar alltid hög kvalitet. Rekommenderar starkt Jakob till alla bolag som behöver få hjälp med sin digitala marknadsföring på ett kostnadseffektivt sätt!”</p>
           </div>
-          <div class="d-flex justify-content-center pt-3" style="width:50%; margin:0 auto;">
-            <img style="max-width: 150px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/kund.png" />
+          <div class="d-flex justify-content-center pt-3 carousel-info-container" style="">
+            <img style="" src="<?php echo get_stylesheet_directory_uri(); ?>/img/kund.png" />
             <p class="testimonial-authors">Person 1</p>
           </div>
         </div>
@@ -175,14 +175,14 @@ get_header(); ?>
       <div class="item">
         <div class="carousel-caption testimonial-caption-style">
         <div class="carousel-container">
-        <p>”Northmire och Jakob hjälper oss med vår digitala marknadsföring, allt från filmproduktion till framtagande av olika typer av innehåll till våra kampanjer. Jakob är snabb, effektiv och har bra kreativ höjd och levererar alltid hög kvalitet. Rekommenderar starkt Jakob till alla bolag som behöver få hjälp med sin digitala marknadsföring på ett kostnadseffektivt sätt!”</p>
+          <p>”Northmire och Jakob hjälper oss med vår digitala marknadsföring, allt från filmproduktion till framtagande av olika typer av innehåll till våra kampanjer. Jakob är snabb, effektiv och har bra kreativ höjd och levererar alltid hög kvalitet. Rekommenderar starkt Jakob till alla bolag som behöver få hjälp med sin digitala marknadsföring på ett kostnadseffektivt sätt!”</p>
           </div>
-          <div class="d-flex justify-content-center pt-3" style="width:50%; margin:0 auto;">
-            <img style="max-width: 150px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/kund.png" />
+          <div class="d-flex justify-content-center pt-3 carousel-info-container" style="">
+            <img style="" src="<?php echo get_stylesheet_directory_uri(); ?>/img/kund.png" />
             <p class="testimonial-authors">Person 1</p>
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
 
     <!-- Controls -->

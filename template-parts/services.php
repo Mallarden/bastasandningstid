@@ -75,7 +75,7 @@ get_header(); ?>
         while ( have_rows('services_studio_repeater') ) : the_row(); ?>
     <div class="w-100 d-flex ml-0 row case-container pt-4">
       <div class="col-lg-6 col-sm-12 fade-y" data-delighter="start:0.90;">
-        <div class="clients-container w-100 bg-shadow">
+        <div class="w-100 bg-shadow">
           <img src="<?php the_sub_field('studio_image'); ?>">
         </div>
       </div>

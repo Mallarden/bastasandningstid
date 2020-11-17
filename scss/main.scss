@@ -28,7 +28,7 @@ p {
 }
 
 * {
-  font-family: $primary !important;
+  font-family: $primary;
 
 }
 a:focus {
@@ -40,6 +40,7 @@ a {
 
 #primary {
   // margin-top: 75px;
+  font-family:$primary;
 }
 
 
@@ -168,7 +169,7 @@ body {
 }
 
 .section-start {
-  background-color: white;
+  background-color:#EDEDED;
 
   & > section {
     padding-top: 150px;
@@ -401,8 +402,11 @@ section {
     margin-top:75px !important;
     .our-expertise {
       width: 100%;
-      .clients-container {
+      
+      .vara-omraden {
         display:block;
+        font-family:$primary;
+        
         video {
           object-fit: cover;
           box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -445,6 +449,7 @@ section {
   bottom: 40%;
   text-shadow: none;
   top: 10%;
+  background:white;
   height: 100%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   .carousel-info-container {
@@ -489,11 +494,17 @@ section {
   background: none;
   box-shadow: none;
   text-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .testimonial-style .carousel-control.right {
   background: none;
   box-shadow: none;
   text-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .testimonial-style .carousel-control {
   color: #354052;
@@ -543,9 +554,12 @@ section {
     }
   } 
   .case-container {
-    .clients-container {
-      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    .project-item {
       border:20px solid #fff;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      background: white;
+    }
+    .clients-container {
       .hover-this-project {
         opacity:0;
         position:absolute;
@@ -554,11 +568,12 @@ section {
         right: 0;
         color:white;
         height:100%;
-        margin-right: 15px;
-        margin-left: 15px;
+        display: flex;
+        align-items: center;
         .project-box-container {
           width:90%;
           margin:0 auto;
+          height:auto;
         }
         transition:0.3s ease-in-out;
 
@@ -567,7 +582,7 @@ section {
         opacity:1;
         transition:0.3s ease-in-out;
         cursor:pointer;
-        background: rgba(0, 0, 0, 0.3);
+        background: rgba(0, 0, 0, 0.6);
         height:100%;
 
       }
@@ -583,7 +598,7 @@ section {
         outline:0;
         font-weight:bold;
         &:hover {
-          background-color:$beige;
+          color:#222;
         }
       }
     }
@@ -601,7 +616,7 @@ section {
     padding-bottom: 50px;
   }
   .container {
-    margin-top:200px;
+    margin-top:125px;
   }
   .projects-container {
     // display: flex;
@@ -703,10 +718,10 @@ a {
 
 .fifth-section {
   section {
-    background-color: white !important;
+    background-color: #EDEDED !important;
 
   }
-  background-color: white !important;
+  background-color: #EDEDED !important;
   .personbild {
     // min-width: 150px;
     margin: 0 auto;
@@ -939,7 +954,7 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
     }
     .row {
       &:nth-child(even) {
-        flex-direction: row-reverse;
+        // flex-direction: row-reverse;
       }
     }
     .black-box {
@@ -947,11 +962,11 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
       background-color:black;
       color:white;
       text-align:center;
-      width:75%;
-      margin:0 auto;
+      max-width:50%;
+      float:right;
       font-size: calc(24px + (26 - 10) * ((100vw - 900px) / (1100 - 300)));
       font-weight:bold;
-      min-width: 70px;
+      min-width: 100px;
       -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
       -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
       box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
@@ -1099,6 +1114,7 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
 }
 
 .pt-cv-wrapper .btn-success {
+  font-weight: 600;
   background-color:#222;
   border:0 !important;
   &:hover {
@@ -1271,19 +1287,7 @@ div.wpforms-container-full, div.wpforms-container-full .wpforms-form * {
     }
   }
 }
-.blog-page {
-  background-color:$offWhite;
-  .case-grid {
-    padding-bottom:50px;
-  }
-}
 
-.single-blog-page {
-  padding-bottom:100px;
-  img {
-    width:100vw;
-  }
-}
 
 .project-content {
   // padding-top:-100px;
@@ -1303,8 +1307,31 @@ div.wpforms-container-full, div.wpforms-container-full .wpforms-form * {
   }
 }
 
-main section h1 {
-  display:none;
+main {
+  background-color:#EDEDED;
+}
+
+.blog-page {
+  background-color:$offWhite;
+  .case-grid {
+    padding-bottom:50px;
+  }
+}
+
+.single-blog-page {
+  padding-bottom:150px;
+  .blog-info {
+    padding-top:20px;
+  }
+  h1 {
+    font-weight:bold;
+  }
+  img {
+    width:100vw;
+  }
+  .blog-content {
+    padding-top:45px;
+  }
 }
 
 
@@ -1314,6 +1341,13 @@ main section h1 {
 @media only screen and (max-width: 1200px) {
   section .section-wrapper {
     width: 90% !important;
+    padding: 50px 0px 50px 0px;
+    h1 {
+      font-size:2.2rem;
+    }
+    h3 {
+      font-size:2rem;
+    }
   }
 
   .citat-wrapper {
@@ -1405,6 +1439,13 @@ main section h1 {
 }
 
 @media only screen and (max-width: 991px) {
+  .vara-omraden {
+    margin-top:40px;
+  }
+  .third-section .case-container .project-item {
+    margin-top:20px;
+  }
+
   /* text-style */
   .testimonials {
     width:100%;
@@ -1417,6 +1458,7 @@ main section h1 {
   line-height: 30px;
   bottom: 40%;
   text-shadow: none;
+  z-index:0;
   top: 10%;
   height: 100%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -1440,7 +1482,6 @@ main section h1 {
   }
 }
   .third-section .case-container .clients-container {
-    margin-top:25px;
     .hover-this-project .project-box-container {
       p:nth-child(0) {
         display:none;
@@ -1454,8 +1495,10 @@ main section h1 {
   .sixth-section {
     padding-top:50px;
     clip-path: none;
+    margin-top: -275px;
   }
   .services-second-section .clients-container img {
+    margin-bottom: 10px;
     max-height: 75px;
   }
   .services-first-section .container > * {
@@ -1464,10 +1507,16 @@ main section h1 {
   .services-first-section .container {
     .black-box {
       width:75px;
-      margin-bottom:25px;
+      float: unset;
+      margin: 0 auto;
+      margin-bottom:35px;
+
     }
     .services-first-container {
       text-align:center;
+      h1 {
+        text-align:center;
+      }
     }
   }
   .blogg-hero-image .flex-container {
@@ -1484,6 +1533,7 @@ main section h1 {
     background-size: cover;
     // display: flex;
     align-items: center;
+    // padding-top: 40px;
     img {
       // height: 75px;
       margin: 0 auto;
@@ -1668,9 +1718,11 @@ main section h1 {
     h1 {
       font-weight: bold;
       font-size:2rem;
-      text-align: center;
+      text-align: left;
     }
-
+    h1:nth-child(2) {
+      text-align:right !important;
+    }
   }
 }
 @media only screen and (max-width: 768px) {

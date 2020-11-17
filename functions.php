@@ -99,7 +99,6 @@ function html5blank_header_scripts() {
 
         wp_register_script('animate', get_template_directory_uri() . '/js/owl.carousel.min.js', array('jquery'), '5.0.0'); // Custom scripts
         wp_enqueue_script('animate'); // Enqueue it!
-        
     }
 }
 
