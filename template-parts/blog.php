@@ -17,14 +17,9 @@ get_header(); ?>
         <h4>En enkel formula där alla delar integreras för att kunna erhålla så bra resultat som möjligt.</h4> -->
         <div class="flex-container">
           <div class="row d-block">
-            <h1 class="flex-item">Kundskap. Nyheter. Tips.</h1>
-            <p class="flex-item">Tillsammans tittar vi på vad för rörligt content ni ska utnyttja och hur detta ska
-              utformas på bästa sätt.
-              Sedan producerar vi det. Helt för egen maskin. Tillsist stöttar vi publicerings- och annonseringsarbetet
-              så
-              mycket det behövs. </p>
-            <h4 class="flex-item">En enkel formula där alla delar integreras för att kunna erhålla så bra resultat som
-              möjligt.</h4>
+            <h1 class="flex-item pb-0">Kundskap. Nyheter. Tips.</h1>
+            <h3 class="flex-item mt-0 pt-0" style="font-weight:300;">Här hittar ni en blandning av allt möjligt. Givetvis noggrant strukturerat. En blandning av uppdateringar, matnyttiga tips och trender.  </h3>
+        
           </div>
         </div>
       </div>
