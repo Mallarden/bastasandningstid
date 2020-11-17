@@ -60,7 +60,7 @@ get_header(); ?>
         <div class="col-lg-4 col-sm-12 fade-x" data-delighter="start:0.92;">
           <div class="vara-omraden">
             <video class="myvideos" src="<?php echo get_stylesheet_directory_uri(); ?>/img/1.Strategi-01.mp4" width="100%" autoplay="true" loop="true"></video>
-            <h3 class="font-weight-bold">Foto</h3>
+            <h3 class="font-weight-bold pb-0 mb-1">Foto</h3>
             <p>Allt från strategi, till konceptualisering & planering av produktion</p>
           </div>
         </div>
@@ -69,14 +69,14 @@ get_header(); ?>
             <video class="myvideos" src="<?php echo get_stylesheet_directory_uri(); ?>/img/2.Film-01.mp4" width="100%" autoplay="true" loop="true"></video>
             <!-- <video class="myvideos" src="<?php echo get_stylesheet_directory_uri(); ?>/img/2.Film-01.mp4" poster="<?php echo get_stylesheet_directory_uri(); ?>/img/animation-img.png" loop="" preload="" playsinline="true" webkit-playsinline="true" muted="" width="100%" height="auto" alt=""></video> -->
 
-            <h3 class="font-weight-bold">Produktion</h3>
+            <h3 class="font-weight-bold pb-0 mb-1">Produktion</h3>
             <p>Filmproduktion och skapande av content i alla dess former</p>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-12 fade-x" data-delighter="start:0.95;">
+        <div class="col-lg-4 col-sm-12 fade-x pb-0" data-delighter="start:0.95;">
           <div class="vara-omraden">
             <video class="myvideos" src="<?php echo get_stylesheet_directory_uri(); ?>/img/3.Annons-01.mp4" width="100%" autoplay="true" loop="true"></video>
-            <h3 class="font-weight-bold">Distribution</h3>
+            <h3 class="font-weight-bold pb-0 mb-1">Distribution</h3>
             <p>Publicering och annonsering mot alla digitala kanaler</p>
           </div>
         </div>
