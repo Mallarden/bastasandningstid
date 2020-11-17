@@ -927,6 +927,14 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
   .row:nth-child(2) {
     padding-left:300px;
   }
+  .row:nth-child(odd) {
+    padding-right:300px;
+  }
+  .row {
+    h1 {
+      padding-bottom:0;
+    }
+  }
 }
 
 .card-1 {
@@ -1453,6 +1461,11 @@ main {
 
 @media only screen and (max-width: 991px) {
   .services-first-section {
+    svg {
+      display:none;
+    }
+  }
+  .services-first-section {
     width: 100vw;
     padding-bottom: 100px;
     .container {
@@ -1489,8 +1502,19 @@ main {
     }
   }
   .tjanster .services-first-section {
+    .container > * {
+      padding-top: 150px;
+  }
     .row:nth-child(2) {
       padding-left:0px;
+    }
+    .row:nth-child(odd) {
+      padding-right:0px;
+    }
+    .row {
+      h1 {
+        padding-bottom:0;
+      }
     }
   }
   .services-third-section {
