@@ -12,10 +12,10 @@ get_header(); ?>
   </video> -->
       <div>
         <div class="flex-container">
-          <div class="row d-block">
-            <h1 class="flex-item">Drivna. Nyfikna. Glada.</h1>
+          <div class="row d-block" style="margin-top:-200px;">
+            <h1 class="flex-item mb-0" style="font-size: font-size: calc(44px + (36 - 10) * ((100vw - 900px) / (1100 - 300)));">Drivna. Nyfikna. Glada.</h1>
             <!-- <p class="flex-item">Vi har alltid haft som ambition att skapa den bästa arbetstiden. </p> -->
-            <h4 class="flex-item">Vi har alltid haft som ambition att skapa den bästa arbetstiden.</h4>
+            <h3 class="flex-item" style="font-weight:300;">Vi har alltid haft som ambition att skapa den bästa arbetstiden.</h3>
           </div>
         </div>
       </div>
