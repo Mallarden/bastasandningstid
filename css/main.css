@@ -659,6 +659,7 @@ section .section-wrapper ul {
 }
 .first-section div h1 {
   padding-bottom: 20;
+  font-size: 3rem;
 }
 
 .second-section .second-section-box {
