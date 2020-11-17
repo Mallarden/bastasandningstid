@@ -9,6 +9,7 @@ h2,
 h3,
 h4 {
   font-family: $primary !important;
+  padding-bottom:1rem;
 }
 
 html {
@@ -475,7 +476,7 @@ section {
 }
 
 .carousel-inner {
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 }
 .testimonial-style .testimonial-authors {
   font-family: $primary;
@@ -1439,6 +1440,14 @@ main {
 }
 
 @media only screen and (max-width: 991px) {
+  .services-third-section {
+    padding-bottom: 300px !important;
+  }
+  .wave-test {
+    background: #EDEDED;
+    clip-path: url(#wave);
+    margin-top: -10vh;
+}
   .vara-omraden {
     margin-top:40px;
   }
