@@ -40,7 +40,7 @@ get_header(); ?>
         <div class="col-lg-5 col-sm-12 px-0 about-us-img">
             <img class="ml-0 mr-0" src="<?php the_sub_field('about_us_image'); ?>"/>
         </div>
-        <div class="col-lg-7 col-sm-12 d-flex align-items-center">
+        <div class="col-lg-7 col-sm-12 d-flex pl-5 align-items-center">
             <div class="about-first-container pt-3">
                 <?php the_sub_field('about_us_text'); ?>
             </div>
