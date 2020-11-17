@@ -1244,6 +1244,11 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
   font-weight: bold;
 }
 
+div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-container-full .wpforms-form button[type=submit], div.wpforms-container-full .wpforms-form .wpforms-page-button {
+  display: block !important;
+  margin: 0 auto !important;
+}
+
 .services-second-section {
   background: #222;
   margin: 0 auto;
