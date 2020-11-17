@@ -1754,6 +1754,7 @@ main {
   }
   .testimonial-style .testimonial-caption-style .carousel-info-container img {
     width: 90%;
+    max-height: 100px;
   }
   .testimonial-style .testimonial-caption-style .carousel-info-container .testimonial-authors {
     margin-top: 15px;

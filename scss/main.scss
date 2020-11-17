@@ -1587,7 +1587,8 @@ main {
   .carousel-info-container {
     width:100%; margin:0 auto;
     img {
-      width:90%
+      width:90%;
+      max-height:100px;
     }
     .testimonial-authors {
       margin-top:15px;
