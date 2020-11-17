@@ -57,14 +57,14 @@ get_header(); ?>
 </div>
       <div class="section-wrapper row mt-5">
       <div class="row our-expertise">
-        <div class="col-lg-4 col-sm-12 fade-y" data-delighter="start:0.95;">
+        <div class="col-lg-4 col-sm-12 fade-x" data-delighter="start:0.92;">
           <div class="vara-omraden">
             <video class="myvideos" src="<?php echo get_stylesheet_directory_uri(); ?>/img/1.Strategi-01.mp4" width="100%" autoplay="true" loop="true"></video>
             <h3 class="font-weight-bold">Foto</h3>
             <p>Allt från strategi, till konceptualisering & planering av produktion</p>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-12 fade-y middle-animation" data-delighter="sta.95;">
+        <div class="col-lg-4 col-sm-12 fade-y middle-animation" data-delighter="start:0.93;">
           <div class="vara-omraden">
             <video class="myvideos" src="<?php echo get_stylesheet_directory_uri(); ?>/img/2.Film-01.mp4" width="100%" autoplay="true" loop="true"></video>
             <!-- <video class="myvideos" src="<?php echo get_stylesheet_directory_uri(); ?>/img/2.Film-01.mp4" poster="<?php echo get_stylesheet_directory_uri(); ?>/img/animation-img.png" loop="" preload="" playsinline="true" webkit-playsinline="true" muted="" width="100%" height="auto" alt=""></video> -->
@@ -73,7 +73,7 @@ get_header(); ?>
             <p>Filmproduktion och skapande av content i alla dess former</p>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-12 fade-y" data-delighter="start:0.95;">
+        <div class="col-lg-4 col-sm-12 fade-x" data-delighter="start:0.95;">
           <div class="vara-omraden">
             <video class="myvideos" src="<?php echo get_stylesheet_directory_uri(); ?>/img/3.Annons-01.mp4" width="100%" autoplay="true" loop="true"></video>
             <h3 class="font-weight-bold">Distribution</h3>
@@ -138,10 +138,10 @@ get_header(); ?>
     <!-- TESTIMONIALS -->
 <section class="testimonials">
   <div>
-    <img src="https://i.imgur.com/gZ5HY0U.png" class="img-responsive quote-image">
+    <img src="https://i.imgur.com/gZ5HY0U.png" class="img-responsive quote-image fade-y" data-delighter="start:0.90;"">
   </div>
   <!-- Carousel Start below -->
-  <div id="carousel1" class="carousel slide testimonial-style" data-ride="carousel">
+  <div id="carousel1" class="carousel slide testimonial-style fade-y" data-delighter="start:0.90;" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#carousel1" data-slide-to="0" class="active"></li>

@@ -27,7 +27,7 @@ get_header(); ?>
   <div class="container pb-5">
   <?php if( have_rows('services_first_container') ):
         while ( have_rows('services_first_container') ) : the_row(); ?>
-      <div class="row">
+      <div class="row fade-x" data-delighter="start:0.90;">
         <div class="col-lg-3 col-sm-12">
           <div class="black-box">
           <?php the_sub_field('services_first_numbers'); ?>
@@ -46,7 +46,7 @@ get_header(); ?>
 </section>
   <section class="services-second-section pb-5">
     <div class="container-fluid">
-    <h1 class=""><strong>Våra styrkor</h1></strong>
+    <h1 style="font-size:3em;" class=""><strong>Våra styrkor</h1></strong>
     <?php if( have_rows('services_repeater') ):
         while ( have_rows('services_repeater') ) : the_row(); ?>
     <div class="w-100 d-flex case-container ">
