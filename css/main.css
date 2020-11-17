@@ -1402,6 +1402,10 @@ div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-contain
 .about-second-section .container .row:nth-child(2n+2) {
   flex-direction: row-reverse;
 }
+.about-second-section .container .row:nth-child(2n+2) .about-first-container {
+  text-align: right;
+  padding-right: 25px;
+}
 .about-second-section .about-us-img {
   border: 20px solid #393838;
   background-size: cover;
@@ -1637,6 +1641,34 @@ main {
 }
 
 @media only screen and (max-width: 991px) {
+  .om-oss .sixth-section {
+    margin-top: 0;
+  }
+
+  .about-second-section {
+    background-color: #222;
+  }
+  .about-second-section .about-first-container {
+    color: white;
+  }
+  .about-second-section .container > * {
+    padding: 40px 0px;
+  }
+  .about-second-section .container .row:nth-child(2n+2) {
+    flex-direction: row-reverse;
+  }
+  .about-second-section .container .row:nth-child(2n+2) .about-first-container {
+    text-align: left;
+    padding-right: 25px;
+  }
+  .about-second-section .about-us-img {
+    border: 20px solid #393838;
+    background-size: cover;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+  }
+
   .services-first-section svg {
     display: none;
   }
