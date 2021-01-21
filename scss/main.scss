@@ -38,7 +38,12 @@ a:focus {
 a {
   text-decoration:none !important;
 }
-
+.mobile-hero {
+  display:none;
+}
+.desktop-hero {
+  display:block;
+}
 #primary {
   // margin-top: 75px;
   font-family:$primary;
@@ -46,7 +51,7 @@ a {
 
 
 .tjanster #primary {
-  background-color: #EDEDED;
+  background-color: #F1F1F1;
 }
 
 body {
@@ -104,6 +109,13 @@ body {
     }
 
     .nav {
+      .current-menu-item {
+        font-weight:bold;
+        a {
+          font-weight:bold;
+
+        }
+      }
       ul {
         display: flex;
 
@@ -114,10 +126,10 @@ body {
           a {
             color: snow;
             font-family: $primary;
-            font-weight: $bold;
+            font-weight: $light;
 
             &:hover {
-              color: black;
+              // color: black;
               text-decoration: none;
             }
 
@@ -126,7 +138,7 @@ body {
               display: block;
               width: 0;
               height: 2px;
-              background: black;
+              background: $beige;
               transition: width 0.4s;
               text-underline-position: right under;
             }
@@ -170,7 +182,7 @@ body {
 }
 
 .section-start {
-  background-color:#EDEDED;
+  background-color:#F2F2F2;
 
   & > section {
     padding-top: 150px;
@@ -343,7 +355,6 @@ section {
   }
 
   .section-wrapper {
-    padding: 100px 0px 150px 0px;
     width: 60%;
     margin: 0 auto;
     // max-width:960px;
@@ -380,35 +391,49 @@ section {
   }
 }
 
+.slider1 {
+  height:400px;
+}
 
 .second-section {
+  width:100%;
+  margin:0 auto;
   .second-section-box {
-    width: 80%;
+    width: 65%;
     background-color:#222 !important;
     height:200px;
-    position:absolute;
+    position: inherit;
+    margin-left:10vw;
     h1 {
       color:white;
       padding-top:30px;
-      width: 100vw;
+      width: 100%;
       position: absolute;
+      left:0;
       strong {
-        position:absolute;
-        left: 0;
+        // position: absolute;
+        left: 0; 
         right: 0;
+        width: 100%;
+        float: right;
       }
     }
   }
+
   .section-wrapper {
-    width: 50%;
-    margin-top:75px !important;
+    width:60%;
+    margin-top: -80px;
+    max-width: 1280px;
     .our-expertise {
       width: 100%;
       
       .vara-omraden {
         display:block;
         font-family:$primary;
-        
+        p {
+          width: 75%;
+          margin: 0 auto;
+        }
         video {
           object-fit: cover;
           box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -443,6 +468,7 @@ section {
 }
 /* text-style */
 .testimonial-style .testimonial-caption-style {
+  display:none;
   font-family: $primary;
   font-weight: 400;
   font-size: 24px;
@@ -488,8 +514,14 @@ section {
 }
 /* carousel-height-control */
 .testimonial-style .carousel-inner > .item {
+  // &:nth-child(1) {
+  background-image: url(../img/test1.webp);
+// }
+  height: 750px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 
-  height: 450px;
 }
 /* carousel-left-right-control */
 .testimonial-style .carousel-control.left {
@@ -542,17 +574,28 @@ section {
 }
 /* Textimonial CSS Code End */
 .third-section {
+  width: 75%;
+  margin: 0 auto;
   padding-bottom:75px;
-  h1 {
+  .float-box{
     color:white;
     padding-top:30px;
-    width: 100vw;
+    width: 100%;
     position: absolute;
     z-index: 1000;
+    text-align: center;
+    left: 0;
     strong {
-      position:absolute;
-      left: 0;
+      // position: absolute;
+      left: 0; 
       right: 0;
+      width: 100%;
+      float: right;
+      position: relative;
+    }
+    p {
+      width:90%;
+      margin:0 auto;
     }
   } 
   .case-container {
@@ -606,11 +649,13 @@ section {
     }
   }
   .third-section-box {
-    width: 80%;
-    background-color:#222 !important;
-    height:200px;
-    position:absolute;
-    right:0;
+    width: 90%;
+    background-color: #222 !important;
+    height: 200px;
+    /* position: absolute; */
+    right: 0;
+    /* left: 0; */
+    float: right;
 
   }
   h1 {
@@ -618,7 +663,7 @@ section {
     padding-bottom: 50px;
   }
   .container {
-    margin-top:125px;
+    margin-top: 200px;
   }
   .projects-container {
     // display: flex;
@@ -719,6 +764,7 @@ a {
 }
 
 .fifth-section {
+
   section {
     background-color: #EDEDED !important;
 
@@ -754,17 +800,16 @@ a {
 footer {
   width: 100%;
   padding-bottom: 25px;
-  background-color: #222;
-  margin-top: -7px;
+  background-color: #fff;
   .logo-img {
-    width: 230px;
+    width: 165px;
     margin: 0 auto;
     display: block;
-    padding-top: 30px;
+    padding-top: 15px;
   }
   h2 {
     text-align: center;
-    color: white;
+    color: black;
     padding-top: 20px;
     font-size: 1.5rem;
   }
@@ -772,29 +817,29 @@ footer {
   .footer-container {
     width: 65%;
     margin: 0 auto;
-    padding: 50px 0px;
+    padding: 30px 0px;
 
     .icon-wrapper {
-      color: white;
+      color: black;
       width: 200px;
       margin: 0 auto;
       justify-content: space-evenly;
-      height: 100%;
+      height: 75%;
       align-items: center;
 
       a {
-        color: white !important;
+        color: black !important;
 
         i {
           font-size: 2.5em;
-          color: white;
+          color: black;
         }
       }
     }
 
     .side-col {
       text-align: center;
-      color: white;
+      color: black;
     }
   }
 }
@@ -911,7 +956,7 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
 
 .copyright {
   text-align: center;
-  color: white;
+  color: black;
 }
 .card {
   background: #fff;
@@ -963,10 +1008,10 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
 }
 .services-first-section {
   width: 100vw;
-  padding-bottom: 100px;
+  // padding-bottom: 100px;
   .container {
     & > * {
-      padding-top:150px;
+      padding-top:0px;
     }
     .row {
       &:nth-child(even) {
@@ -1000,6 +1045,9 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
 div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-container-full .wpforms-form button[type=submit], div.wpforms-container-full .wpforms-form .wpforms-page-button {
   display:block !important;
   margin:0 auto !important;
+  width:100%;
+  border-radius: 30px;
+  background-color:#252525;
 }
 .services-second-section {
   background: #222;
@@ -1056,7 +1104,7 @@ div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-contain
       font-size: calc(44px + (36 - 10) * ((100vw - 900px) / (1100 - 300)));
 
     }
-    height: 90vh;
+    height: 40vh;
     padding: 0;
     margin: 0;
     display: flex;
@@ -1171,7 +1219,7 @@ div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-contain
 }
 }
 .about-first-section {
-  background-color:#f8f8f8;
+  // background-color:#f8f8f8;
   .vilka-ar-vi {
     line-height:20px;
   }
@@ -1368,8 +1416,37 @@ main {
     RESPONSIVE
 \*------------------------------------*/
 @media only screen and (max-width: 1200px) {
-  section .section-wrapper {
-    width: 90% !important;
+  .first-section {
+    h1 span {
+      font-size:1em !important;
+    }
+  }
+  .mobile-hero {
+    display:block !important;
+  }
+  .desktop-hero {
+    display:none;
+  }
+  .hero-image video {
+    height:33vh;
+  }
+  .hero-text-container {
+    height:33vh;
+  }
+  .first-wave {
+    margin-top: -90px;
+  }
+  .second-section .second-section-box h1 strong, .third-section h1 strong {
+    width: auto;
+    left:auto;
+    right:auto;
+   
+  }
+  .second-section, .third-section {
+    width:100%;
+  }
+  .second-section .section-wrapper {
+    width: 90%;
     padding: 50px 0px 50px 0px;
     h1 {
       font-size:2.2rem;
@@ -1386,6 +1463,7 @@ main {
 
   .hero-image {
     background-color: $beige;
+    height:33vh;
     video {
       display: none;
     }
@@ -1403,6 +1481,11 @@ main {
 }
 
 @media only screen and (max-width: 1024px) {
+  .second-section .section-wrapper {
+    width: 80%;
+    padding: 0px 0px 50px 0px;
+    margin-top:0px;
+}
   .third-section {
     .projects-container {
       // display: block !important;
@@ -1468,6 +1551,46 @@ main {
 }
 
 @media only screen and (max-width: 991px) {
+  .case-hero-image .flex-container {
+    margin-top:50px;
+  }
+  .section-start .about-first-section {
+    width:95%;
+    margin:0 auto;
+    padding-top:25px;
+  }
+  .about-hero-image .flex-container {
+    height:33vh;
+    margin-top:50px;
+    .d-block {
+      margin-top:0px !important;
+    }
+  }
+  .fourth-section-content {
+    width:80%;
+    h2 {
+      font-size:2em;
+    }
+  }
+  section .section-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    // max-width:960px;
+    justify-content: space-between;
+  }
+  .second-section .second-section-box h1 strong, .third-section h1 strong {
+    width: auto;
+    left:0;
+    right:0;
+    position:absolute;
+  }
+  .third-section h1 {
+    width:100%;
+    font-size: 30px !important;
+    strong {
+      position:relative;
+    }
+  }
   .om-oss .sixth-section {
     margin-top:0;
   }
@@ -1537,10 +1660,15 @@ main {
       
     }
   }
-  .tjanster .services-first-section {
-    .container > * {
-      padding-top: 150px;
+  .tjanster-hero-image .flex-container {
+    height:65vh;
   }
+  .tjanster .services-first-section {
+
+       .three-part-info {
+        padding-top: 50px;
+    }
+  
     .row:nth-child(2) {
       padding-left:0px;
     }
@@ -1554,7 +1682,7 @@ main {
     }
   }
   .services-third-section {
-    padding-bottom: 300px !important;
+    padding-bottom: 150px !important;
   }
   .wave-test {
     background: #EDEDED;
@@ -1562,7 +1690,7 @@ main {
     margin-top: -10vh;
 }
   .vara-omraden {
-    margin-top:40px;
+    margin-top:70px;
   }
   .third-section .case-container .project-item {
     margin-top:20px;
@@ -1573,6 +1701,7 @@ main {
     width:100%;
   }
 .testimonial-style .testimonial-caption-style {
+
   font-family: $primary;
   font-weight: 400;
   font-size: 24px;
@@ -1600,7 +1729,7 @@ main {
     margin:0 auto;
     padding-top:25px;
     p {
-      font-size:12px;
+      font-size:16px;
     }
   }
 }
@@ -1616,9 +1745,8 @@ main {
   }
   }
   .sixth-section {
-    padding-top:50px;
+    padding-top:20px;
     clip-path: none;
-    margin-top: -275px;
   }
   .services-second-section .clients-container img {
     margin-bottom: 10px;
@@ -1686,16 +1814,17 @@ main {
   .second-section .second-section-box {
     width: 100%;
     background-color:#222 !important;
-    height:200px;
-    position:absolute;
+    height:120px;
+    position:relative;
+    margin-left:0;
   }
   .third-section {
     .container {
-      margin-top:100px;
+      // margin-top:100px;
     }
     .third-section-box {
       width:100%;
-      height:100px;
+      // height:100px;
     }
   }
   .services-second-section .container-fluid {
@@ -1728,6 +1857,7 @@ main {
   }
 
   .fifth-section {
+    
     .personbild {
       // min-width: 150px;
       margin: 0 auto;
@@ -1785,6 +1915,7 @@ main {
   }
 
   .first-section {
+   
     .section-wrapper {
       .col-sm-12:nth-child(2) {
         padding-top: 25px;

@@ -379,12 +379,20 @@ a {
   text-decoration: none !important;
 }
 
+.mobile-hero {
+  display: none;
+}
+
+.desktop-hero {
+  display: block;
+}
+
 #primary {
   font-family: "Source Sans Pro", sans-serif;
 }
 
 .tjanster #primary {
-  background-color: #EDEDED;
+  background-color: #F1F1F1;
 }
 
 body {
@@ -431,6 +439,12 @@ body header .header-inner {
   display: flex;
   justify-content: space-between;
 }
+body header .nav .current-menu-item {
+  font-weight: bold;
+}
+body header .nav .current-menu-item a {
+  font-weight: bold;
+}
 body header .nav ul {
   display: flex;
 }
@@ -441,10 +455,9 @@ body header .nav ul li {
 body header .nav ul li a {
   color: snow;
   font-family: "Source Sans Pro", sans-serif;
-  font-weight: 900;
+  font-weight: 300;
 }
 body header .nav ul li a:hover {
-  color: black;
   text-decoration: none;
 }
 body header .nav ul li a::after {
@@ -452,7 +465,7 @@ body header .nav ul li a::after {
   display: block;
   width: 0;
   height: 2px;
-  background: black;
+  background: #EBE2CD;
   transition: width 0.4s;
   text-underline-position: right under;
 }
@@ -484,7 +497,7 @@ body header .support-btn {
 }
 
 .section-start {
-  background-color: #EDEDED;
+  background-color: #F2F2F2;
 }
 .section-start > section {
   padding-top: 150px;
@@ -641,7 +654,6 @@ section article {
   background-color: #EDEDED;
 }
 section .section-wrapper {
-  padding: 100px 0px 150px 0px;
   width: 60%;
   margin: 0 auto;
   justify-content: space-between;
@@ -662,26 +674,38 @@ section .section-wrapper ul {
   font-size: 3rem;
 }
 
+.slider1 {
+  height: 400px;
+}
+
+.second-section {
+  width: 100%;
+  margin: 0 auto;
+}
 .second-section .second-section-box {
-  width: 80%;
+  width: 65%;
   background-color: #222 !important;
   height: 200px;
-  position: absolute;
+  position: inherit;
+  margin-left: 10vw;
 }
 .second-section .second-section-box h1 {
   color: white;
   padding-top: 30px;
-  width: 100vw;
-  position: absolute;
-}
-.second-section .second-section-box h1 strong {
+  width: 100%;
   position: absolute;
   left: 0;
+}
+.second-section .second-section-box h1 strong {
+  left: 0;
   right: 0;
+  width: 100%;
+  float: right;
 }
 .second-section .section-wrapper {
-  width: 50%;
-  margin-top: 75px !important;
+  width: 60%;
+  margin-top: -80px;
+  max-width: 1280px;
 }
 .second-section .section-wrapper .our-expertise {
   width: 100%;
@@ -690,6 +714,10 @@ section .section-wrapper ul {
   display: block;
   font-family: "Source Sans Pro", sans-serif;
   text-align: center;
+}
+.second-section .section-wrapper .our-expertise .vara-omraden p {
+  width: 75%;
+  margin: 0 auto;
 }
 .second-section .section-wrapper .our-expertise .vara-omraden video {
   object-fit: cover;
@@ -717,6 +745,7 @@ section .section-wrapper ul {
 
 /* text-style */
 .testimonial-style .testimonial-caption-style {
+  display: none;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -765,7 +794,11 @@ section .section-wrapper ul {
 
 /* carousel-height-control */
 .testimonial-style .carousel-inner > .item {
-  height: 450px;
+  background-image: url(../img/test1.webp);
+  height: 750px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 /* carousel-left-right-control */
@@ -827,6 +860,8 @@ section .section-wrapper ul {
 
 /* Textimonial CSS Code End */
 .third-section {
+  width: 75%;
+  margin: 0 auto;
   padding-bottom: 75px;
   /*******************************
   * ACCORDION WITH TOGGLE ICONS
@@ -834,17 +869,25 @@ section .section-wrapper ul {
   * Get free snippets on bootpen.com
   *******************************/
 }
-.third-section h1 {
+.third-section .float-box {
   color: white;
   padding-top: 30px;
-  width: 100vw;
+  width: 100%;
   position: absolute;
   z-index: 1000;
+  text-align: center;
+  left: 0;
 }
-.third-section h1 strong {
-  position: absolute;
+.third-section .float-box strong {
   left: 0;
   right: 0;
+  width: 100%;
+  float: right;
+  position: relative;
+}
+.third-section .float-box p {
+  width: 90%;
+  margin: 0 auto;
 }
 .third-section .case-container .project-item {
   border: 20px solid #fff;
@@ -891,18 +934,20 @@ section .section-wrapper ul {
   color: #222;
 }
 .third-section .third-section-box {
-  width: 80%;
+  width: 90%;
   background-color: #222 !important;
   height: 200px;
-  position: absolute;
+  /* position: absolute; */
   right: 0;
+  /* left: 0; */
+  float: right;
 }
 .third-section h1 {
   text-align: center;
   padding-bottom: 50px;
 }
 .third-section .container {
-  margin-top: 125px;
+  margin-top: 200px;
 }
 .third-section a {
   width: 100%;
@@ -1014,44 +1059,43 @@ section .section-wrapper ul {
 footer {
   width: 100%;
   padding-bottom: 25px;
-  background-color: #222;
-  margin-top: -7px;
+  background-color: #fff;
 }
 footer .logo-img {
-  width: 230px;
+  width: 165px;
   margin: 0 auto;
   display: block;
-  padding-top: 30px;
+  padding-top: 15px;
 }
 footer h2 {
   text-align: center;
-  color: white;
+  color: black;
   padding-top: 20px;
   font-size: 1.5rem;
 }
 footer .footer-container {
   width: 65%;
   margin: 0 auto;
-  padding: 50px 0px;
+  padding: 30px 0px;
 }
 footer .footer-container .icon-wrapper {
-  color: white;
+  color: black;
   width: 200px;
   margin: 0 auto;
   justify-content: space-evenly;
-  height: 100%;
+  height: 75%;
   align-items: center;
 }
 footer .footer-container .icon-wrapper a {
-  color: white !important;
+  color: black !important;
 }
 footer .footer-container .icon-wrapper a i {
   font-size: 2.5em;
-  color: white;
+  color: black;
 }
 footer .footer-container .side-col {
   text-align: center;
-  color: white;
+  color: black;
 }
 
 .sixth-section {
@@ -1172,7 +1216,7 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
 
 .copyright {
   text-align: center;
-  color: white;
+  color: black;
 }
 
 .card {
@@ -1220,10 +1264,9 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
 
 .services-first-section {
   width: 100vw;
-  padding-bottom: 100px;
 }
 .services-first-section .container > * {
-  padding-top: 150px;
+  padding-top: 0px;
 }
 .services-first-section .container .black-box {
   padding: 20px;
@@ -1247,6 +1290,9 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
 div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-container-full .wpforms-form button[type=submit], div.wpforms-container-full .wpforms-form .wpforms-page-button {
   display: block !important;
   margin: 0 auto !important;
+  width: 100%;
+  border-radius: 30px;
+  background-color: #252525;
 }
 
 .services-second-section {
@@ -1293,7 +1339,7 @@ div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-contain
 }
 
 .tjanster-hero-image .flex-container {
-  height: 90vh;
+  height: 40vh;
   padding: 0;
   margin: 0;
   display: flex;
@@ -1383,9 +1429,6 @@ div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-contain
   font-weight: bold;
 }
 
-.about-first-section {
-  background-color: #f8f8f8;
-}
 .about-first-section .vilka-ar-vi {
   line-height: 20px;
 }
@@ -1560,14 +1603,48 @@ main {
     RESPONSIVE
 \*------------------------------------*/
 @media only screen and (max-width: 1200px) {
-  section .section-wrapper {
-    width: 90% !important;
+  .first-section h1 span {
+    font-size: 1em !important;
+  }
+
+  .mobile-hero {
+    display: block !important;
+  }
+
+  .desktop-hero {
+    display: none;
+  }
+
+  .hero-image video {
+    height: 33vh;
+  }
+
+  .hero-text-container {
+    height: 33vh;
+  }
+
+  .first-wave {
+    margin-top: -90px;
+  }
+
+  .second-section .second-section-box h1 strong, .third-section h1 strong {
+    width: auto;
+    left: auto;
+    right: auto;
+  }
+
+  .second-section, .third-section {
+    width: 100%;
+  }
+
+  .second-section .section-wrapper {
+    width: 90%;
     padding: 50px 0px 50px 0px;
   }
-  section .section-wrapper h1 {
+  .second-section .section-wrapper h1 {
     font-size: 2.2rem;
   }
-  section .section-wrapper h3 {
+  .second-section .section-wrapper h3 {
     font-size: 2rem;
   }
 
@@ -1578,6 +1655,7 @@ main {
 
   .hero-image {
     background-color: #EBE2CD;
+    height: 33vh;
   }
   .hero-image video {
     display: none;
@@ -1591,6 +1669,12 @@ main {
   }
 }
 @media only screen and (max-width: 1024px) {
+  .second-section .section-wrapper {
+    width: 80%;
+    padding: 0px 0px 50px 0px;
+    margin-top: 0px;
+  }
+
   .third-section .projects-container .col:nth-child(2) {
     margin: 15px 0px;
   }
@@ -1641,6 +1725,52 @@ main {
 }
 
 @media only screen and (max-width: 991px) {
+  .case-hero-image .flex-container {
+    margin-top: 50px;
+  }
+
+  .section-start .about-first-section {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 25px;
+  }
+
+  .about-hero-image .flex-container {
+    height: 33vh;
+    margin-top: 50px;
+  }
+  .about-hero-image .flex-container .d-block {
+    margin-top: 0px !important;
+  }
+
+  .fourth-section-content {
+    width: 80%;
+  }
+  .fourth-section-content h2 {
+    font-size: 2em;
+  }
+
+  section .section-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .second-section .second-section-box h1 strong, .third-section h1 strong {
+    width: auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+  }
+
+  .third-section h1 {
+    width: 100%;
+    font-size: 30px !important;
+  }
+  .third-section h1 strong {
+    position: relative;
+  }
+
   .om-oss .sixth-section {
     margin-top: 0;
   }
@@ -1699,8 +1829,12 @@ main {
     font-weight: bold;
   }
 
-  .tjanster .services-first-section .container > * {
-    padding-top: 150px;
+  .tjanster-hero-image .flex-container {
+    height: 65vh;
+  }
+
+  .tjanster .services-first-section .three-part-info {
+    padding-top: 50px;
   }
   .tjanster .services-first-section .row:nth-child(2) {
     padding-left: 0px;
@@ -1713,7 +1847,7 @@ main {
   }
 
   .services-third-section {
-    padding-bottom: 300px !important;
+    padding-bottom: 150px !important;
   }
 
   .wave-test {
@@ -1723,7 +1857,7 @@ main {
   }
 
   .vara-omraden {
-    margin-top: 40px;
+    margin-top: 70px;
   }
 
   .third-section .case-container .project-item {
@@ -1765,7 +1899,7 @@ main {
     padding-top: 25px;
   }
   .testimonial-style .testimonial-caption-style .carousel-container p {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .third-section .case-container .clients-container .hover-this-project .project-box-container {
@@ -1779,9 +1913,8 @@ main {
   }
 
   .sixth-section {
-    padding-top: 50px;
+    padding-top: 20px;
     clip-path: none;
-    margin-top: -275px;
   }
 
   .services-second-section .clients-container img {
@@ -1841,16 +1974,13 @@ main {
   .second-section .second-section-box {
     width: 100%;
     background-color: #222 !important;
-    height: 200px;
-    position: absolute;
+    height: 120px;
+    position: relative;
+    margin-left: 0;
   }
 
-  .third-section .container {
-    margin-top: 100px;
-  }
   .third-section .third-section-box {
     width: 100%;
-    height: 100px;
   }
 
   .services-second-section .container-fluid {

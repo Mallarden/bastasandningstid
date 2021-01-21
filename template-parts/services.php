@@ -9,7 +9,7 @@ get_header(); ?>
     <div class="container text-center">
       <div>
         
-        <div class="flex-container">
+        <div class="flex-container" style="color:white;">
           <div class="row d-block">
             <div class="flex-item"><? the_field('service_hero_text')?></div>
         
@@ -18,16 +18,15 @@ get_header(); ?>
       </div>
     </div>
   </div>
-<section class="wave-test services-first-section">
-  <svg>
-    <clipPath id="wave" clipPathUnits="objectBoundingBox">
-      <path class="st0" d="M1,0c0,0-0.3,0.1-0.5,0.1S0.3,0,0,0.1V1h1L1,0z"/>
-    </clipPath>
-  </svg>
+  <img style="width:100%;     background-color: #212121;
+    " src="<?php echo get_template_directory_uri(); ?>/img/white-wave.webp" />  
+
+<section class="services-first-section">
+ 
   <div class="container pb-5">
   <?php if( have_rows('services_first_container') ):
         while ( have_rows('services_first_container') ) : the_row(); ?>
-      <div class="row fade-x" data-delighter="start:0.90;">
+      <div class="row fade-x three-part-info" data-delighter="start:0.90;">
         <div class="col-lg-3 col-sm-12">
           <div class="black-box">
           <?php the_sub_field('services_first_numbers'); ?>
@@ -50,7 +49,7 @@ get_header(); ?>
     <?php if( have_rows('services_repeater') ):
         while ( have_rows('services_repeater') ) : the_row(); ?>
     <div class="w-100 d-flex case-container ">
-      <div class="pl-0 col-lg-2 col-sm-12 fade-y" data-delighter="start:0.90;">
+      <div class="px-0 col-lg-2 col-sm-12 fade-y" data-delighter="start:0.90;">
         <div class="clients-container w-100">
           <!-- style="background-image:url('<?php the_sub_field('services'); ?>')"> -->
           <img src="<?php the_sub_field('services'); ?>">

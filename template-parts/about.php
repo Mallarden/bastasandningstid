@@ -21,13 +21,11 @@ get_header(); ?>
       </div>
     </div>
 </div>
+
   </div>
-  <section class="wave-test about-first-section pb-5 ">
-  <svg>
-    <clipPath id="wave" clipPathUnits="objectBoundingBox">
-      <path class="st0" d="M1,0c0,0-0.3,0.1-0.5,0.1S0.3,0,0,0.1V1h1L1,0z"/>
-    </clipPath>
-  </svg>
+  <img style="width:100%; background-color: rgba(0, 0, 0, 0.4)" src="<?php echo get_template_directory_uri(); ?>/img/white-wave.webp" />  
+  <div class="section-start">
+  <section class="about-first-section pb-5 ">
     <div class="container">
       <?php the_field('vilka_ar_vi')?>
     </div>
@@ -50,7 +48,7 @@ get_header(); ?>
     </div>
 </section>
   
- 
+  </div>
 </div><!-- #primary -->
 
 <?php get_footer();
