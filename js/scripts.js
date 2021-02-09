@@ -68,15 +68,15 @@
 
     setTimeout(doChange, delay);
 
-    // $(document).ready(function () {
-    //   $(".myvideos")
-    //     .on("mouseover", function (event) {
-    //       this.play();
-    //     })
-    //     .on("mouseout", function (event) {
-    //       this.pause();
-    //     });
-    // });
+    $(document).ready(function () {
+      $(".myvideos")
+        .on("mouseover", function (event) {
+          this.play();
+        })
+        .on("mouseout", function (event) {
+          this.pause();
+        });
+    });
 
     $("#customers-testimonials").owlCarousel({
       loop: true,

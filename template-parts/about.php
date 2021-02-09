@@ -12,7 +12,7 @@ get_header(); ?>
   </video> -->
       <div>
         <div class="flex-container">
-          <div class="row d-block" style="margin-top:-200px;">
+          <div class="row d-block">
             <h1 class="flex-item mb-0" style="font-size: font-size: calc(44px + (36 - 10) * ((100vw - 900px) / (1100 - 300)));">Drivna. Nyfikna. Glada.</h1>
             <!-- <p class="flex-item">Vi har alltid haft som ambition att skapa den bästa arbetstiden. </p> -->
             <h3 class="flex-item" style="font-weight:300;">Vi har alltid haft som ambition att skapa den bästa arbetstiden.</h3>
@@ -23,22 +23,23 @@ get_header(); ?>
 </div>
 
   </div>
-  <img style="width:100%; background-color: rgba(0, 0, 0, 0.4)" src="<?php echo get_template_directory_uri(); ?>/img/white-wave.webp" />  
-  <div class="section-start">
+  <div class="section-start om-oss-section">
+  <img style="width:100%;" src="<?php echo get_template_directory_uri(); ?>/img/white-wave.webp" />  
+
   <section class="about-first-section pb-5 ">
     <div class="container">
       <?php the_field('vilka_ar_vi')?>
     </div>
   </section>
 <section class="about-second-section">
-  <div class="container pb-5">
+  <div class="container" style="padding-bottom:75px;">
   <?php if( have_rows('about_us') ):
     while ( have_rows('about_us') ) : the_row(); ?>
       <div class="row pt-5 fade-y pt-4" data-delighter="start:0.90;">
         <div class="col-lg-5 col-sm-12 px-0 about-us-img">
             <img class="ml-0 mr-0" src="<?php the_sub_field('about_us_image'); ?>"/>
         </div>
-        <div class="col-lg-7 col-sm-12 d-flex pl-5 align-items-center">
+        <div class="col-lg-7 col-sm-12 d-flex align-items-center">
             <div class="about-first-container pt-3">
                 <?php the_sub_field('about_us_text'); ?>
             </div>

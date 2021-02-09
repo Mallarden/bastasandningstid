@@ -13,7 +13,7 @@
 			</section>
 			<section class="seventh-section">
 			<div class="container">
-			<p>[ps2id id='kontakt' target=''/]</p>
+			<?php echo do_shortcode("[ps2id id='kontakt' target=''/]"); ?>
 				<h2 class="pb-4"><strong>Eller kontakta oss!</strong></h2>
 				<? echo do_shortcode( '[wpforms id="269" title="false" description="false"]' ); ?>
 				<br/>

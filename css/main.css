@@ -497,10 +497,30 @@ body header .support-btn {
 }
 
 .section-start {
-  background-color: #F2F2F2;
+  margin-top: 0px;
 }
 .section-start > section {
   padding-top: 150px;
+  background-color: #F2F2F2;
+  padding-bottom: 0px;
+}
+
+.wpforms-field-container input, .wpforms-field-row-block, .wpforms-submit, textarea {
+  background: #333 !important;
+  -webkit-box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.25) !important;
+  -moz-box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.25) !important;
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.25) !important;
+  border: 0 !important;
+}
+.wpforms-field-container input:hover, .wpforms-field-row-block:hover, .wpforms-submit:hover, textarea:hover {
+  background: #fff !important;
+}
+
+.wpforms-submit {
+  color: white !important;
+}
+.wpforms-submit:hover {
+  color: black !important;
 }
 
 .scroller {
@@ -668,6 +688,9 @@ section .section-wrapper p {
 section .section-wrapper ul {
   width: max-content;
   padding-inline-start: 20px;
+}
+.first-section {
+  background-color: #F2F2F2;
 }
 .first-section div h1 {
   padding-bottom: 20;
@@ -860,7 +883,7 @@ section .section-wrapper ul {
 
 /* Textimonial CSS Code End */
 .third-section {
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
   padding-bottom: 75px;
   /*******************************
@@ -868,6 +891,10 @@ section .section-wrapper ul {
   * Does not work properly if "in" is added after "collapse".
   * Get free snippets on bootpen.com
   *******************************/
+}
+.third-section .inner-section {
+  width: 75%;
+  margin: 0 auto;
 }
 .third-section .float-box {
   color: white;
@@ -947,7 +974,7 @@ section .section-wrapper ul {
   padding-bottom: 50px;
 }
 .third-section .container {
-  margin-top: 200px;
+  margin-top: 160px;
 }
 .third-section a {
   width: 100%;
@@ -1016,7 +1043,7 @@ section .section-wrapper ul {
 }
 
 .fourth-section {
-  background-color: #222;
+  background-color: #212121 !important;
 }
 .fourth-section .section-wrapper {
   padding-bottom: 0px;
@@ -1099,12 +1126,12 @@ footer .footer-container .side-col {
 }
 
 .sixth-section {
-  background: #222;
+  background: #212121;
   clip-path: url(#wave);
   color: white;
   text-align: center;
   font-weight: bold;
-  padding-top: 150px;
+  padding-top: 25px;
   margin-top: -75px;
 }
 
@@ -1229,11 +1256,19 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
   width: 300px;
 }
 
+.tjanster .services-first-section {
+  margin-top: -100px;
+}
+.tjanster .services-first-section .row:nth-child(1) {
+  padding-top: 0 !important;
+}
 .tjanster .services-first-section .row:nth-child(2) {
   padding-left: 300px;
+  padding-top: 50px;
 }
 .tjanster .services-first-section .row:nth-child(odd) {
   padding-right: 300px;
+  padding-top: 50px;
 }
 .tjanster .services-first-section .row h1 {
   padding-bottom: 0;
@@ -1300,7 +1335,7 @@ div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-contain
   margin: 0 auto;
 }
 .services-second-section h1 {
-  padding: 50px 0px;
+  padding: 25px 0px;
   display: block;
   color: White;
 }
@@ -1345,6 +1380,7 @@ div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-contain
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 50px;
 }
 .tjanster-hero-image .flex-container h1 {
   font-size: calc(44px + (36 - 10) * ((100vw - 900px) / (1100 - 300)));
@@ -1406,6 +1442,10 @@ div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-contain
   background-image: url(../img/Exempel-studiosetup.jpg);
   background-position: center;
   background-size: cover;
+  position: fixed;
+  top: 0;
+  z-index: -3;
+  height: 100%;
 }
 .about-hero-image .about-filter {
   width: 100vw;
@@ -1414,9 +1454,10 @@ div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-contain
 }
 .about-hero-image .flex-container {
   color: white;
-  height: 80vh;
+  height: 60vh;
   padding: 0;
   margin: 0;
+  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1434,13 +1475,17 @@ div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-contain
 }
 
 .about-second-section {
-  background-color: #222;
+  background-color: #222 !important;
 }
 .about-second-section .about-first-container {
   color: white;
 }
+.about-second-section .about-first-container h2, .about-second-section .about-first-container h1, .about-second-section .about-first-container h3 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 .about-second-section .container > * {
-  padding: 40px 0px;
+  padding: 0px 0px;
 }
 .about-second-section .container .row:nth-child(2n+2) {
   flex-direction: row-reverse;
@@ -1599,32 +1644,20 @@ main {
   padding-top: 45px;
 }
 
+.om-oss-section {
+  margin-top: 50vh;
+}
+.om-oss-section .about-first-section {
+  padding-top: 0px;
+  margin-top: -80px;
+}
+
 /*------------------------------------*\
     RESPONSIVE
 \*------------------------------------*/
 @media only screen and (max-width: 1200px) {
   .first-section h1 span {
     font-size: 1em !important;
-  }
-
-  .mobile-hero {
-    display: block !important;
-  }
-
-  .desktop-hero {
-    display: none;
-  }
-
-  .hero-image video {
-    height: 33vh;
-  }
-
-  .hero-text-container {
-    height: 33vh;
-  }
-
-  .first-wave {
-    margin-top: -90px;
   }
 
   .second-section .second-section-box h1 strong, .third-section h1 strong {
@@ -1650,21 +1683,6 @@ main {
 
   .citat-wrapper {
     width: 90% !important;
-    margin: 0 auto;
-  }
-
-  .hero-image {
-    background-color: #EBE2CD;
-    height: 33vh;
-  }
-  .hero-image video {
-    display: none;
-  }
-  .hero-image .text-animation {
-    display: flex;
-    font-family: "Source Sans Pro", sans-serif;
-    align-items: center;
-    font-size: 1.8em;
     margin: 0 auto;
   }
 }
@@ -1725,28 +1743,43 @@ main {
 }
 
 @media only screen and (max-width: 991px) {
+  .mobile-hero {
+    display: block !important;
+  }
+
+  .desktop-hero {
+    display: none;
+  }
+
+  .hero-image video {
+    height: 33vh;
+  }
+
+  .hero-text-container {
+    height: 33vh;
+  }
+
   .case-hero-image .flex-container {
     margin-top: 50px;
   }
 
   .section-start .about-first-section {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     padding-top: 25px;
   }
 
   .about-hero-image .flex-container {
-    height: 33vh;
     margin-top: 50px;
   }
   .about-hero-image .flex-container .d-block {
     margin-top: 0px !important;
   }
 
-  .fourth-section-content {
+  .fourth-section .fourth-section-content {
     width: 80%;
   }
-  .fourth-section-content h2 {
+  .fourth-section .fourth-section-content h2 {
     font-size: 2em;
   }
 
@@ -1783,12 +1816,13 @@ main {
   }
   .about-second-section .container > * {
     padding: 40px 0px;
+    text-align: center;
   }
   .about-second-section .container .row:nth-child(2n+2) {
     flex-direction: row-reverse;
   }
   .about-second-section .container .row:nth-child(2n+2) .about-first-container {
-    text-align: left;
+    text-align: center;
     padding-right: 25px;
   }
   .about-second-section .about-us-img {
@@ -1797,6 +1831,8 @@ main {
     -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    width: 75%;
+    margin: 0 auto;
   }
 
   .services-first-section svg {
@@ -2056,9 +2092,10 @@ footer div p {
     padding-top: 25px;
   }
 
-  .services-first-section {
+  .tjanster .services-first-section {
     background: transparent;
     font-size: 1.5em;
+    margin-top: 0px;
   }
 
   .services-second-section {

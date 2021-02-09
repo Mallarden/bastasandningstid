@@ -17,9 +17,9 @@ get_header(); ?>
     <div class="hero-title">
     </div>
   </div>
-  <img class="first-wave" style="width:100%;" src="<?php echo get_template_directory_uri(); ?>/img/white-wave.webp" />  
 
   <div class="section-start">
+  <img class="first-wave" style="width:100%;" src="<?php echo get_template_directory_uri(); ?>/img/white-wave.webp" />  
 
     <section class="first-section pt-0">
       <div class="arrow-scroll">
@@ -45,14 +45,14 @@ get_header(); ?>
       <div class="row our-expertise">
         <div class="col-lg-4 col-sm-12 fade-x" data-delighter="start:0.92;">
           <div class="vara-omraden">
-            <video class="myvideos" src="<?php echo get_stylesheet_directory_uri(); ?>/img/1.Strategi-01.mp4" width="100%" autoplay="true" loop="true"></video>
+            <video class="myvideos" src="<?php echo get_stylesheet_directory_uri(); ?>/img/1.Strategi-01.mp4" poster="<?php echo get_stylesheet_directory_uri(); ?>/img/omroden-1.png" muted="true" playsinline="true" webkit-playsinline="true" width="100%" loop="true"></video>
             <h3 class="font-weight-bold pb-0 mb-1">Foto</h3>
             <p>Allt från strategi, till konceptualisering & planering av produktion</p>
           </div>
         </div>
         <div class="col-lg-4 col-sm-12 fade-y middle-animation" data-delighter="start:0.93;">
           <div class="vara-omraden">
-            <video class="myvideos" src="<?php echo get_stylesheet_directory_uri(); ?>/img/2.Film-01.mp4" width="100%" autoplay="true" loop="true"></video>
+            <video class="myvideos" src="<?php echo get_stylesheet_directory_uri(); ?>/img/2.Film-01.mp4" poster="<?php echo get_stylesheet_directory_uri(); ?>/img/omroden-2.png" muted="true" width="100%" playsinline="true" webkit-playsinline="true" loop="true"></video>
             <!-- <video class="myvideos" src="<?php echo get_stylesheet_directory_uri(); ?>/img/2.Film-01.mp4" poster="<?php echo get_stylesheet_directory_uri(); ?>/img/animation-img.png" loop="" preload="" playsinline="true" webkit-playsinline="true" muted="" width="100%" height="auto" alt=""></video> -->
 
             <h3 class="font-weight-bold pb-0 mb-1">Produktion</h3>
@@ -61,7 +61,7 @@ get_header(); ?>
         </div>
         <div class="col-lg-4 col-sm-12 fade-x pb-0" data-delighter="start:0.95;">
           <div class="vara-omraden">
-            <video class="myvideos" src="<?php echo get_stylesheet_directory_uri(); ?>/img/3.Annons-01.mp4" width="100%" autoplay="true" loop="true"></video>
+            <video class="myvideos" src="<?php echo get_stylesheet_directory_uri(); ?>/img/3.Annons-01.mp4" poster="<?php echo get_stylesheet_directory_uri(); ?>/img/omroden-3.png" muted="true" playsinline="true" webkit-playsinline="true" width="100%" loop="true"></video>
             <h3 class="font-weight-bold pb-0 mb-1">Distribution</h3>
             <p>Publicering och annonsering mot alla digitala kanaler</p>
           </div>
@@ -70,12 +70,14 @@ get_header(); ?>
       </div>
     </section>
     <section class="third-section">
+        <div class="inner-section">
       <div class="third-section-box">
     <div class="float-box">
       <h1 class="" style="font-size:40px;"><strong>Projekt. Kampanjer. Samarbeten.</strong></h1>
     <p style="font-style: italic; font-size:18px;">Det börjar med ett, som blir till två, som blir till samarbete, som leder till livslång kärlek!</p>
-    <br/><br/>
-    <p>[ps2id id='case' target=''/]</p>
+    
+    <?php echo do_shortcode("[ps2id id='case' target=''/]"); ?>
+    </div>
     </div>
     </div>
     <div class="container">
@@ -112,7 +114,7 @@ get_header(); ?>
 </section>
   <section class="fourth-section pt-0">
       <div class="section-wrapper fourth-section-content">
-        <h2 style="font-size:40px;" class="fade-y" data-delighter="start:0.96;"><strong>Väx tillsammans med oss precis som dess verksamheter gör.</strong></h2>
+        <h2 class="logo-slider-h2 fade-y" data-delighter="start:0.96;"><strong>Väx tillsammans med oss precis som dess verksamheter gör.</strong></h2>
         <? the_field('logo-slider') ?>
           <!-- <?php if( have_rows('sektion_3') ):
 							while ( have_rows('sektion_3') ) : the_row(); ?>

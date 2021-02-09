@@ -182,10 +182,28 @@ body {
 }
 
 .section-start {
-  background-color:#F2F2F2;
-
+  margin-top:0px;
   & > section {
     padding-top: 150px;
+    background-color:#F2F2F2;
+    padding-bottom: 0px;
+  }
+}
+
+.wpforms-field-container input, .wpforms-field-row-block, .wpforms-submit, textarea {
+  background:#333 !important;
+  -webkit-box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.25) !important;
+-moz-box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.25) !important;
+box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.25) !important;
+  border:0 !important;
+  &:hover {
+    background:#fff !important;
+  }
+}
+.wpforms-submit {
+  color:white !important;
+  &:hover {
+    color:black !important;
   }
 }
 
@@ -383,6 +401,8 @@ section {
 }
 
 .first-section {
+  background-color:#F2F2F2;
+
   div {
     h1 {
       padding-bottom: 20;
@@ -574,9 +594,13 @@ section {
 }
 /* Textimonial CSS Code End */
 .third-section {
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
   padding-bottom:75px;
+  .inner-section {
+    width:75%;
+    margin:0 auto;
+  }
   .float-box{
     color:white;
     padding-top:30px;
@@ -663,7 +687,7 @@ section {
     padding-bottom: 50px;
   }
   .container {
-    margin-top: 200px;
+    margin-top: 160px;
   }
   .projects-container {
     // display: flex;
@@ -751,7 +775,7 @@ a {
 }
 
 .fourth-section {
-  background-color: #222;
+  background-color: #212121 !important;
   .section-wrapper {
     padding-bottom: 0px;
   }
@@ -845,12 +869,12 @@ footer {
 }
 
 .sixth-section {
-  background: #222;
+  background: #212121;
   clip-path: url(#wave);
   color:white;
   text-align:center;
   font-weight:bold;
-  padding-top: 150px;
+  padding-top: 25px;
     margin-top: -75px;
 }
 
@@ -969,11 +993,18 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
 }
 
 .tjanster .services-first-section {
+  margin-top:-100px;
+  .row:nth-child(1) {
+    padding-top:0 !important;
+  }
   .row:nth-child(2) {
     padding-left:300px;
+    padding-top:50px;
   }
   .row:nth-child(odd) {
     padding-right:300px;
+    padding-top:50px;
+
   }
   .row {
     h1 {
@@ -1053,7 +1084,7 @@ div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-contain
   background: #222;
   margin: 0 auto;
   h1 {
-    padding: 50px 0px;
+    padding: 25px 0px;
     display: block;
     color:White;
   }
@@ -1110,7 +1141,7 @@ div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-contain
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    margin-top:50px;
 }
 .row {
     width: auto;
@@ -1196,6 +1227,10 @@ div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-contain
   background-image: url(../img/Exempel-studiosetup.jpg);
   background-position: center;
   background-size:cover;
+  position:fixed;
+  top: 0;
+  z-index: -3;
+  height:100%;
   .about-filter {
     width:100vw;
     height:100%;
@@ -1210,9 +1245,10 @@ div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-contain
     h4 {
       font-weight: bold;
     }
-    height: 80vh;
+    height: 60vh;
     padding: 0;
     margin: 0;
+    margin-top:50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1226,13 +1262,17 @@ div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-contain
 }
 
 .about-second-section {
-  background-color:#222;
+  background-color:#222 !important;
   .about-first-container {
+    h2, h1, h3 {
+      margin-bottom:0;
+      padding-bottom:0;
+    }
     color:white;
   }
   .container {
     > *{
-      padding:40px 0px;
+      padding:0px 0px;
     }
   .row:nth-child(2n+2) {
     flex-direction: row-reverse;
@@ -1410,7 +1450,13 @@ main {
     padding-top:45px;
   }
 }
-
+.om-oss-section {
+  margin-top:50vh;
+  .about-first-section {
+    padding-top:0px;
+    margin-top:-80px;
+  }
+}
 
 /*------------------------------------*\
     RESPONSIVE
@@ -1421,20 +1467,8 @@ main {
       font-size:1em !important;
     }
   }
-  .mobile-hero {
-    display:block !important;
-  }
-  .desktop-hero {
-    display:none;
-  }
-  .hero-image video {
-    height:33vh;
-  }
-  .hero-text-container {
-    height:33vh;
-  }
   .first-wave {
-    margin-top: -90px;
+    // margin-top: -150px;
   }
   .second-section .second-section-box h1 strong, .third-section h1 strong {
     width: auto;
@@ -1461,23 +1495,6 @@ main {
     margin: 0 auto;
   }
 
-  .hero-image {
-    background-color: $beige;
-    height:33vh;
-    video {
-      display: none;
-    }
-    .text-animation {
-      display: flex;
-      font-family: $primary;
-      align-items: center;
-      font-size: 1.8em;
-      margin: 0 auto;
-      // letter-spacing: 4px;
-      span {
-      }
-    }
-  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1551,22 +1568,33 @@ main {
 }
 
 @media only screen and (max-width: 991px) {
+  .mobile-hero {
+    display:block !important;
+  }
+  .desktop-hero {
+    display:none;
+  }
+  .hero-image video {
+    height:33vh;
+  }
+  .hero-text-container {
+    height:33vh;
+  }
   .case-hero-image .flex-container {
     margin-top:50px;
   }
   .section-start .about-first-section {
-    width:95%;
+    width:100%;
     margin:0 auto;
     padding-top:25px;
   }
   .about-hero-image .flex-container {
-    height:33vh;
     margin-top:50px;
     .d-block {
       margin-top:0px !important;
     }
   }
-  .fourth-section-content {
+  .fourth-section .fourth-section-content {
     width:80%;
     h2 {
       font-size:2em;
@@ -1591,6 +1619,7 @@ main {
       position:relative;
     }
   }
+ 
   .om-oss .sixth-section {
     margin-top:0;
   }
@@ -1602,11 +1631,12 @@ main {
     .container {
       > *{
         padding:40px 0px;
+        text-align:center;
       }
     .row:nth-child(2n+2) {
       flex-direction: row-reverse;
       .about-first-container {
-        text-align: left;
+        text-align: center;
         padding-right: 25px;
       }
     }
@@ -1617,6 +1647,8 @@ main {
       -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
       -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
       box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+      width:75%;
+      margin:0 auto;
     }
   }
   .services-first-section {
@@ -1922,9 +1954,10 @@ main {
       }
     }
   }
-  .services-first-section {
+  .tjanster .services-first-section {
     background: transparent;
     font-size:1.5em;
+    margin-top:0px;
   }
   .services-second-section {
     width: 100%;
