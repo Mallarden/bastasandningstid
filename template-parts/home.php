@@ -29,7 +29,7 @@ get_header(); ?>
 
         <?php if( have_rows('sektion_1') ):
 							while ( have_rows('sektion_1') ) : the_row(); ?>
-        <div class="col-sm-12 col-lg-12 fade-y" style="max-width:1000px;" data-delighter="start:0.90;">
+        <div class="col-sm-12 col-lg-12 fade-y" style="max-width:1000px; margin:0 auto;" data-delighter="start:0.90;">
           <div>
             <? the_sub_field('sektion_1_text');?>
           </div>

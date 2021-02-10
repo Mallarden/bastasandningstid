@@ -2,7 +2,6 @@
 @import "_colors";
 @import "_reset";
 @import "_fonts";
-@import "_owl.carousel";
 
 h1,
 h2,
@@ -185,8 +184,8 @@ body {
   margin-top:0px;
   & > section {
     padding-top: 150px;
-    background-color:#F2F2F2;
-    padding-bottom: 0px;
+    background-color:#F1F1F1;
+    // padding-bottom: 0px;
   }
 }
 
@@ -428,7 +427,6 @@ section {
       color:white;
       padding-top:30px;
       width: 100%;
-      position: absolute;
       left:0;
       strong {
         // position: absolute;
@@ -605,7 +603,6 @@ section {
     color:white;
     padding-top:30px;
     width: 100%;
-    position: absolute;
     z-index: 1000;
     text-align: center;
     left: 0;
@@ -1135,13 +1132,13 @@ div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-contain
       font-size: calc(44px + (36 - 10) * ((100vw - 900px) / (1100 - 300)));
 
     }
-    height: 40vh;
+    height: 100%;
     padding: 0;
     margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top:50px;
+    padding-top:150px;
 }
 .row {
     width: auto;
@@ -1239,19 +1236,26 @@ div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-contain
   .flex-container {
     color:white;
     h1 {
-      font-size: calc(34px + (36 - 10) * ((100vw - 900px) / (1100 - 300)));
+      font-size: calc(50px + (36 - 10) * ((100vw - 900px) / (1100 - 300)));
       font-weight: bold;
+      padding-bottom: 5px;
     }
     h4 {
       font-weight: bold;
     }
-    height: 60vh;
+    h3 {
+      font-size:1.25em;
+    }
+    width: 90%;
+    
+    height: 50vh;
     padding: 0;
     margin: 0;
     margin-top:50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
 }
 }
 .about-first-section {
@@ -2013,6 +2017,9 @@ main {
   }
 }
 @media only screen and (max-width: 768px) {
+  .first-wave {
+    margin-top:-90px;
+  }
   .hero-text-container {
     .hero-title {
       h1 {
