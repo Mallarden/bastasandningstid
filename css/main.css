@@ -467,9 +467,6 @@ section .section-wrapper ul {
   margin-top: -80px;
   max-width: 1280px;
 }
-.second-section .section-wrapper .our-expertise {
-  width: 100%;
-}
 .second-section .section-wrapper .our-expertise .vara-omraden {
   display: block;
   font-family: "Source Sans Pro", sans-serif;
@@ -1218,6 +1215,7 @@ div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-contain
 
 .about-second-section {
   background-color: #222 !important;
+  padding-bottom: 175px;
 }
 .about-second-section .about-first-container {
   color: white;
@@ -1237,7 +1235,7 @@ div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-contain
   padding-right: 25px;
 }
 .about-second-section .about-us-img {
-  border: 20px solid #393838;
+  border: 10px solid #393838;
   background-size: cover;
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
@@ -1391,7 +1389,12 @@ main {
 }
 .om-oss-section .about-first-section {
   padding-top: 0px;
-  margin-top: -80px;
+  margin-top: -180px;
+  font-size: 18px;
+  padding-bottom: 75px;
+}
+.om-oss-section .about-first-container p {
+  font-size: 18px;
 }
 
 /*------------------------------------*\
@@ -1399,7 +1402,7 @@ main {
 \*------------------------------------*/
 @media only screen and (max-width: 1200px) {
   .first-section h1 span {
-    font-size: 1em !important;
+    font-size: 36px !important;
   }
 
   .second-section .second-section-box h1 strong, .third-section h1 strong {
@@ -1430,7 +1433,7 @@ main {
 }
 @media only screen and (max-width: 1024px) {
   .second-section .section-wrapper {
-    width: 80%;
+    width: 90%;
     padding: 0px 0px 50px 0px;
     margin-top: 0px;
   }
@@ -1509,11 +1512,9 @@ main {
     width: 100%;
     margin: 0 auto;
     padding-top: 25px;
+    margin-top: -1px;
   }
 
-  .about-hero-image .flex-container {
-    margin-top: 50px;
-  }
   .about-hero-image .flex-container .d-block {
     margin-top: 0px !important;
   }
@@ -1526,7 +1527,7 @@ main {
   }
 
   section .section-wrapper {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     justify-content: space-between;
   }
@@ -1565,10 +1566,10 @@ main {
   }
   .about-second-section .container .row:nth-child(2n+2) .about-first-container {
     text-align: center;
-    padding-right: 25px;
+    padding-right: 0px;
   }
   .about-second-section .about-us-img {
-    border: 20px solid #393838;
+    border: 10px solid #393838;
     background-size: cover;
     -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
@@ -1743,6 +1744,9 @@ main {
     padding-top: 50px;
   }
 
+  .about-second-section {
+    padding-bottom: 50px;
+  }
   .about-second-section .container img {
     width: 100%;
     display: block;
@@ -1880,6 +1884,20 @@ footer div p {
 }
 
 @media only screen and (max-width: 768px) {
+  .third-section {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 75px;
+  }
+  .third-section .container {
+    margin-top: 200px;
+    width: max-content;
+  }
+  .third-section .inner-section {
+    width: 100%;
+    margin: 0 auto;
+  }
+
   .first-wave {
     margin-top: -90px;
   }

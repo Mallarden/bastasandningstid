@@ -26,20 +26,20 @@ get_header(); ?>
   <div class="section-start om-oss-section">
   <img style="width:100%;" src="<?php echo get_template_directory_uri(); ?>/img/white-wave.webp" />  
 
-  <section class="about-first-section pb-5 ">
+  <section class="about-first-section">
     <div class="container">
       <?php the_field('vilka_ar_vi')?>
     </div>
   </section>
 <section class="about-second-section">
-  <div class="container" style="padding-bottom:75px;">
+  <div class="container">
   <?php if( have_rows('about_us') ):
     while ( have_rows('about_us') ) : the_row(); ?>
       <div class="row pt-5 fade-y pt-4" data-delighter="start:0.90;">
-        <div class="col-lg-5 col-sm-12 px-0 about-us-img">
+        <div class="col-lg-3 col-sm-12 px-0 about-us-img">
             <img class="ml-0 mr-0" src="<?php the_sub_field('about_us_image'); ?>"/>
         </div>
-        <div class="col-lg-7 col-sm-12 d-flex align-items-center">
+        <div class="col-lg-7 col-lg-offset-2 col-sm-12 d-flex align-items-center">
             <div class="about-first-container pt-3">
                 <?php the_sub_field('about_us_text'); ?>
             </div>
