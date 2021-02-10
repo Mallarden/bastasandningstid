@@ -5,7 +5,7 @@
 get_header(); ?>
 <div id="primary" class="content">
 
-  <div class="tjanster-hero-image" style="background-color:#212121;>
+  <div class="tjanster-hero-image" style="background-color:#212121;">
     <div class="container text-center">
       <div>
         
