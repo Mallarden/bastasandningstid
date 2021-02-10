@@ -5,7 +5,7 @@
 get_header(); ?>
 <div id="primary" class="content">
 
-  <div class="tjanster-hero-image" style="background-color:#<? the_field('background-color-hero')?>; background-image:url('<?php the_sub_field('background-image-hero'); ?>;')">
+  <div class="tjanster-hero-image" style="background-color:#<? the_field('background-color-hero')?>;>
     <div class="container text-center">
       <div>
         
