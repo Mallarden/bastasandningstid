@@ -95,8 +95,7 @@ get_header(); ?>
     <img src="https://i.imgur.com/gZ5HY0U.png" class="img-responsive quote-image fade-y" data-delighter="start:0.90;"">
   </div>
   <br/>
-  <?php echo do_shortcode('[gs_logo title="yes" posts="15" order="ASC" logo_cat="testimonials" inf_loop="1" mode="horizontal" speed="1000"]
-'); ?>
+  <?php echo do_shortcode('[gslogo id=1]'); ?>
 
       
     </section>

@@ -498,6 +498,7 @@ section .section-wrapper ul {
   margin-bottom: auto;
   padding-top: 60px;
   width: 80px;
+  display: none;
 }
 
 /* text-style */
@@ -1742,6 +1743,7 @@ main {
 
   .section-start > section {
     padding-top: 50px;
+    margin-top: -1px;
   }
 
   .about-second-section {
@@ -1884,6 +1886,10 @@ footer div p {
 }
 
 @media only screen and (max-width: 768px) {
+  .slider1 {
+    height: 300px;
+  }
+
   .third-section {
     width: 100%;
     margin: 0 auto;
@@ -1891,7 +1897,6 @@ footer div p {
   }
   .third-section .container {
     margin-top: 200px;
-    width: max-content;
   }
   .third-section .inner-section {
     width: 100%;

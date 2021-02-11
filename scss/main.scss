@@ -482,6 +482,7 @@ section {
   margin-bottom: auto;
   padding-top: 60px;
   width: 80px;
+  display:none;
 }
 /* text-style */
 .testimonial-style .testimonial-caption-style {
@@ -1846,6 +1847,7 @@ main {
   }
   .section-start > section {
     padding-top:50px;
+    margin-top: -1px;
   }
   .about-second-section {
     padding-bottom:50px;
@@ -2027,13 +2029,15 @@ main {
   }
 }
 @media only screen and (max-width: 768px) {
+  .slider1 {
+    height:300px;
+  }
   .third-section {
     width: 100%;
     margin: 0 auto;
     padding-bottom:75px;
     .container {
       margin-top:200px;
-      width:max-content;
     }
     .inner-section {
       width:100%;
